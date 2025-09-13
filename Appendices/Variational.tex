@@ -1,0 +1,131 @@
+\chapter{Hamilton's principle}
+\label{app:brans}
+This appendix serves to explain in detail the field equations in Section obtain through the variational principle. For simplicity we start by splitting the BD action into a purely gravitational and matter part, respectively,
+\begin{align}
+    &S^{\mathrm{grav}}_{\mathrm{BD}}=\int_{\mathcal{M}}d^4x \sqrt{-g}\frac{1}{2k'}\left[R\phi - \frac{\omega}{\phi}\phi_{,\mu}\phi^{,\mu}\right],
+    \label{eqn:appendix_bd_action}\\
+    &S^{(m)}_{\mathrm{BD}}=\int_{\mathcal{M}}d^4x \sqrt{-g}\mathcal{L}_m.
+\end{align}
+
+From the definition of the energy-momentum tensor in Eq.(\ref{}), the variation of the matter part w.r.t the $g^{\mu\nu}$ is,
+\begin{equation}
+    \delta_g S_{\mathrm{BD}}^{(m)}=\int_{\mathcal{M}} d^4 x \delta\left(\sqrt{-g} \mathcal{L}_m\right)=-\frac{1}{2}\int_{\mathcal{M}} d^4 x \sqrt{-g} \delta g^{\mu \nu} T_{\mu \nu}^{(m)}.
+\end{equation}
+and since this Lagrangian does not depend on $\phi$, $\delta_\phi S^{(m)}_{\mathrm{BD}}=0$.
+
+The variation of the purely gravitational part w.r.t the metric is,
+\begin{equation}
+    \delta_g S_{\mathrm{BD}}^{\mathrm{grav}}=\int_{\mathcal{M}} d^4 x\left\{\frac{\delta \sqrt{-g}}{2k'}\left[\phi R-\frac{\omega}{\phi}\phi_{,\mu}\phi^{,\mu}\right]+\frac{\sqrt{-g}}{2k'}\left[\phi\delta R-\frac{\omega}{\phi} \partial_\mu \phi \partial_\nu \phi \delta g^{\mu \nu}\right]\right\},
+    \label{eqn:appendix_grav_d_action}
+\end{equation}
+where we have taken into account that,
+\begin{equation}
+\delta_g\left(\phi_{,\mu}\phi^{,\mu}\right)=\delta_g\left(g^{\mu\nu}\partial_\mu\phi\partial_\nu\phi\right)=\partial_\mu\phi\partial_\nu\phi \delta g^{\mu\nu}.
+\end{equation}
+
+The variation of the purely gravitational part w.r.t the scalar field is,
+\begin{equation}
+    \delta_\phi S_{\mathrm{BD}}^{\mathrm{grav}}=\frac{1}{2k'}\int_{\mathcal{M}} d^4x\sqrt{-g}\left\{ R-\omega\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}+2\omega\frac{\Box\phi}{\phi}\right\}\delta\phi
+    \label{eqn:appendix_delta_phi}
+\end{equation}
+where we take into consideration that,
+\begin{align}
+    \delta\left(\frac{\phi_{,\mu}\phi^{,\mu}}{\phi}\right)&=-\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}\delta\phi+\frac{1}{\phi}\delta\left(\phi_{,\mu}\phi^{,\mu}\right)=-\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}\delta\phi+\frac{2}{\phi}\nabla^\mu\phi\nabla_\mu \delta\phi=\\
+    &=-\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}\delta\phi+2\nabla_\mu\left(\frac{\nabla^\mu\phi}{\phi}\delta\phi\right)-2\nabla_\mu\left(\frac{\nabla^\mu\phi}{\phi}\right)\delta\phi=\label{eqn:appendix_phi_boundary}\\
+    &=-\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}\delta\phi-2\frac{\Box\phi}{\phi}\delta\phi+2\frac{\nabla^\mu\phi\nabla_\mu\phi}{\phi^2}\delta\phi=\\
+    &=\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}\delta\phi-2\frac{\Box\phi}{\phi}\delta\phi.
+\end{align}
+
+The second term in Eq.(\ref{eqn:appendix_phi_boundary}) is a boundary term, given by,
+\begin{equation}
+    \int_{\mathcal{M}}d^4x\sqrt{-g}\nabla_\mu\left(\frac{\nabla^\mu\phi}{\phi}\delta\phi\right)
+\end{equation}
+and therefore, due to the requirement set by the stationary action principle (i.e. Hamilton's principle) it must vanish\footnote{The stationary action principle requires that on the boundary of integration variations of the metric and its first derivatives must vanish}.
+
+
+
+The following property can be used to rewrite Eq.(\ref{eqn:appendix_grav_d_action}), 
+\begin{align}
+    &\delta\left(\sqrt{-g}\right)=-\frac{1}{2}\frac{1}{\sqrt{-g}}\delta\det(g_{\mu\nu})=-\frac{1}{2}\sqrt{-g}g_{\alpha\beta}\delta g^{\alpha\beta},\\
+    &\delta R=R_{\mu\nu}\delta g^{\mu\nu}+g^{\mu\nu}\delta R_{\mu\nu},
+\end{align}
+where in the first equation the Jacobi formula is used, i.e. $\delta(\det(A))=\det(A)Tr\left(A^{-1}\delta A\right)$. 
+
+Then Eq.(\ref{eqn:appendix_grav_d_action}) is rewritten as,
+\begin{equation}
+\delta_g S_{\mathrm{BD}}^{\mathrm{grav}}=\int_{\mathcal{M}} d^4 x \sqrt{-g} \frac{\delta g^{\mu \nu}}{2k'}\left\{\phi G_{\mu \nu}-\frac{\omega}{\phi}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]\right\}+\frac{1}{2k'}\delta_g \bar{S},
+\end{equation}
+where,
+\begin{equation}
+    \delta_g \bar{S}=\int_{\mathcal{M}} d^4 x \sqrt{-g}\phi g^{\mu\nu}\delta R_{\mu\nu}.
+    \label{eqn:appendix_extra_bd}
+\end{equation}
+
+Let us focus on this variation for a moment, in standard Hilbert-Einstein action this term generally vanishes, but now due to the presence of the scalar field $\phi$, it will not. By the Palatini identity,
+\begin{equation}
+    \delta R_{\mu\nu}=\nabla_\lambda\left(\delta \Gamma^\lambda_{\mu\nu}\right)-\nabla_\nu\left(\delta \Gamma^\lambda_{\mu\lambda}\right),
+\end{equation}
+we rewrite the Eq.(\ref{eqn:appendix_extra_bd}) as,
+\begin{equation}
+    \delta_g \bar{S}=\int_{\mathcal{M}} d^4 x \sqrt{-g}\phi g^{\mu\nu}\left[\nabla_\lambda\left(\delta \Gamma^\lambda_{\mu\nu}\right)-\nabla_\nu\left(\delta \Gamma^\lambda_{\mu\lambda}\right)\right].
+    \label{eqn:appendix_eextra_bd}
+\end{equation}
+
+By virtue of the Stokes-Gauss-Ostrogradski theorem (i.e. Gauss theorem),
+\begin{align}
+    &\int_{\mathcal{M}} d^4 x \sqrt{-g}\phi g^{\mu\nu}\nabla_\lambda\left(\delta \Gamma^\lambda_{\mu\nu}\right)=\int_{\mathcal{M}} d^4 x \sqrt{-g} \nabla_\lambda\left(\phi g^{\mu\nu} \delta \Gamma^\lambda_{\mu\nu}\right)-\int_{\mathcal{M}} d^4 x \sqrt{-g}g^{\mu\nu}\delta \Gamma^\lambda_{\mu\nu}\nabla_\lambda\phi,  \\
+    &\int_{\mathcal{M}} d^4 x \sqrt{-g}\phi g^{\mu\nu}\nabla_\nu\left(\delta \Gamma^\lambda_{\mu\lambda}\right)=\int_{\mathcal{M}} d^4 x \sqrt{-g} \nabla_\nu\left(\phi g^{\mu\nu} \delta \Gamma^\lambda_{\mu\lambda}\right)-\int_{\mathcal{M}} d^4 x \sqrt{-g}g^{\mu\nu}\delta \Gamma^\lambda_{\mu\lambda}\nabla_\nu\phi,
+\end{align}
+both the first terms in the RHS, are boundary terms which vanish. Therefore, putting these equations in Eq.(\ref{eqn:appendix_eextra_bd}),
+\begin{align}
+    \delta_g \bar{S}&=\int_{\mathcal{M}} d^4 x \sqrt{-g}\left[g^{\mu\nu}\delta \Gamma^\lambda_{\mu\lambda}\nabla_\nu\phi-g^{\mu\nu}\delta \Gamma^\lambda_{\mu\nu}\nabla_\lambda\phi\right]=\nonumber\\
+    &=\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla_\lambda\phi\left[g^{\mu\lambda}\delta \Gamma^\nu_{\mu\nu}-g^{\mu\nu}\delta \Gamma^\lambda_{\mu\nu}\right].
+    \label{eqn:appendix_eeextra_bd}
+\end{align}
+
+The variation of the Christoffel symbol can be written as,
+\begin{equation}
+    \delta \Gamma_{\mu \nu}^\lambda=\frac{1}{2} g^{\lambda \rho}\left(\nabla_\mu \delta g_{\nu \rho}+\nabla_\nu \delta g_{\mu \rho}-\nabla_\rho \delta g_{\mu \nu}\right)
+\end{equation}
+from this we see that,
+\begin{align}
+    &\delta \Gamma_{\mu \nu}^\nu = \frac{1}{2}g^{\nu \rho}\nabla_\mu \delta g_{\nu \rho},\\
+    &g^{\mu\nu}\delta \Gamma_{\mu \nu}^\lambda=\frac{1}{2} g^{\lambda \rho}\left(2\nabla^\nu \delta g_{\nu \rho}-g^{\mu\nu}\nabla_\rho \delta g_{\mu \nu}\right)
+\end{align}
+putting this in Eq.(\ref{eqn:appendix_eeextra_bd}),
+\begin{align}
+    \delta_g \bar{S}&=\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla_\lambda\phi\left[g^{\nu \rho}\nabla^\lambda \delta g_{\nu \rho}-g^{\lambda \rho}\nabla^\nu \delta g_{\nu \rho}\right]=\nonumber\\
+    &=\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla_\lambda\phi\left[\nabla_\nu\delta g^{\nu\lambda}-g_{\alpha\beta}\nabla^\lambda \delta g^{\alpha\beta}\right]
+    \label{eqn:appendix_eeeextra_bd}
+\end{align}
+where in the last step the relation $\delta g_{\mu \nu}=-g_{\mu \alpha} g_{\nu \beta} \delta g^{\alpha \beta}$ was useful. From these new terms, the Gauss theorem is,
+\begin{align}
+    &\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla_\lambda\phi\nabla_\nu\delta g^{\nu\lambda}=\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla_\nu\left(\delta g^{\nu\lambda}\nabla_\lambda\phi\right) - \int_{\mathcal{M}} d^4 x \sqrt{-g}\delta g^{\nu\lambda}\nabla_\nu \nabla_\lambda\phi, \\
+    &\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla_\lambda\phi g_{\alpha\beta}\nabla^\lambda \delta g^{\alpha\beta}=\int_{\mathcal{M}} d^4 x \sqrt{-g}\nabla^\lambda\left(g_{\alpha\beta}\delta g^{\alpha\beta}\nabla_\lambda\phi \right) - \int_{\mathcal{M}} d^4 x \sqrt{-g}g_{\alpha\beta}\delta g^{\alpha\beta}\nabla^\lambda\nabla_\lambda\phi ,
+\end{align}
+where again the boundary terms vanish, giving us finally,
+\begin{equation}
+    \delta_g \bar{S}=\int_{\mathcal{M}} d^4 x \sqrt{-g}\left(g_{\mu\nu}\Box\phi-\nabla_\mu\nabla_\nu\phi\right)\delta g^{\mu\nu}.
+\end{equation}
+
+Hence, we obtain the action variation,
+\begin{align}
+    \delta_g S_{\mathrm{BD}}&=\delta_g S^{\mathrm{grav}}_{\mathrm{BD}} + \delta_g S^{(m)}_{\mathrm{BD}}=\nonumber\\
+    &=\frac{1}{2k'}\int_{\mathcal{M}}d^4x \sqrt{-g}\delta g^{\mu\nu}\left\{\phi G_{\mu \nu}-\frac{\omega}{\phi}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]\right.\label{eqn:appendix_delta_metric}\\
+    &\qquad\qquad\qquad\qquad\qquad\qquad\qquad\left.+\left(g_{\mu\nu}\Box\phi-\nabla_\mu\nabla_\nu\phi\right) -k'T_{\mu\nu}^{(m)}\right\},\nonumber
+\end{align}
+and now by requiring $\delta_g S_{\mathrm{BD}}=0$, we obtain the Brans-Dicke field equations,
+\begin{align}
+    G_{\mu\nu}=k'\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)\right\}
+    \label{eqn:appendix_field_metric}
+\end{align}
+where all the terms inside the curved brackets can be viewed as an effective energy-momentum tensor $T_{\mu\nu}^{\mathrm{eff}}$. And by taking the trace of Eq.(\ref{eqn:appendix_field_metric}),
+\begin{equation}
+    R=-k'\frac{T^{(m)}}{\phi}+\frac{\omega}{\phi^2}\phi_{,\lambda}\phi^{,\lambda}+3\frac{\Box\phi}{\phi}
+\end{equation}
+and employing it in Eq.(\ref{eqn:appendix_delta_phi}) and by setting $\delta_\phi S_{\mathrm{BD}}=0$, we obtain the field equation for the scalar field $\phi$,
+\begin{equation}
+    \Box\phi=\frac{kT^{(m)}}{2\omega+3}.
+    \label{eqn:appendix_field_phi}
+\end{equation}
+
