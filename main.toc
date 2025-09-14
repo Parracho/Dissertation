@@ -28,27 +28,29 @@
 \contentsline {subsection}{\numberline {2.2.3}Decomposition of the energy-momentum tensor}{8}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Time derivatives}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Kinematical quantities}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Dynamical equations}{9}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Conformal 3+1 Formalism}{9}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Introduction}{10}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Kinematical quantities}{10}{subsection.2.6.2}%
-\contentsline {chapter}{\numberline {3}Averaging procedure}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Buchert's approach}{13}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Lightcone Averaging Procedure}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Conformal LCA}{15}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Scalar-tensor theories}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Jordan-Brans-Dicke theory}{18}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Jordan frame}{18}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Einstein frame}{20}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Bergmann-Wagoner theory}{22}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Einstien frame}{23}{subsection.4.2.1}%
-\contentsline {chapter}{\numberline {5}Backreaction}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Jordan-Brans-Dicke theory}{24}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Jordan frame}{24}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Homogeneous scalar field}{26}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Einstein frame}{26}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Bergmann-Wagoner theory}{28}{section.5.2}%
+\contentsline {section}{\numberline {2.5}Gauss-Codazzi-Ricci Relations}{11}{section.2.5}%
+\contentsline {section}{\numberline {2.6}3+1 Decomposition of the Einstein equation}{12}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Dynamical Equations}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Conformal 3+1 Formalism}{13}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Introduction}{13}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Kinematical quantities}{14}{subsection.2.8.2}%
+\contentsline {chapter}{\numberline {3}Averaging procedure}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Buchert's approach}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lightcone Averaging Procedure}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Conformal LCA}{18}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Scalar-tensor theories}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Jordan-Brans-Dicke theory}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Jordan frame}{21}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Einstein frame}{23}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Bergmann-Wagoner theory}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Einstien frame}{26}{subsection.4.2.1}%
+\contentsline {chapter}{\numberline {5}Backreaction}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Jordan-Brans-Dicke theory}{27}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Jordan frame}{27}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Homogeneous scalar field}{29}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Einstein frame}{29}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Bergmann-Wagoner theory}{31}{section.5.2}%
 \vspace {0.5cm}
-\contentsline {chapter}{Bibliography}{28}{dummy.6}%
-\contentsline {chapter}{\numberline {A}Hamilton's principle}{31}{appendix.A}%
+\contentsline {chapter}{Bibliography}{31}{dummy.6}%
+\contentsline {chapter}{\numberline {A}Hamilton's principle}{34}{appendix.A}%
 \contentsfinish 

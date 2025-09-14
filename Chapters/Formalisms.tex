@@ -491,38 +491,188 @@ The pressure,
 We have presented in Fig.\eqref{fig:foliation}, three different congruences and therefore multiple time derivatives can arise \cite{Buchert_2020}:
 \begin{itemize}
     \item Comoving derivative along the normal flow and according to the proper time $\tau$, i.e. $d/d\tau$.
+    \item Comoving derivative along the fluid flow and according to the proper time $\tau_0$, i.e. $d/d\tau_0$.
     \item Comoving derivative along the normal flow and according to the coordinate time, i.e. $d/dt$.
+    \item Comoving derivative along the fluid flow and according to the coordinate time, i.e. $D/Dt$.
     \item Partial coordinate time derivative along the curves of $x^i=\text{const.}$, i.e. $\partial/\partial t:=\partial_t|_{x^i}$ .
 \end{itemize}
 
 Let $\mathbf{F}$ be a tensor of arbitrary rank. We can relate the $d/dt$ and $\partial_t|_{x^i}$ by,
 \begin{equation}
     \frac{d\mathbf{F}}{dt}=\left.\frac{\partial \mathbf{F}}{\partial t}\right|_{X^i}=\left.\frac{\partial \mathbf{F}}{\partial t}\right|_{x^i}+\left.\frac{\partial x^i}{\partial t}\right|_{X^i}\frac{\partial \mathbf{F}}{\partial x^i}=\left.\frac{\partial \mathbf{F}}{\partial t}\right|_{x^i}-\beta^i\frac{\partial \mathbf{F}}{\partial x^i},
-    \label{eqn:total_time_expression}
+    \label{eqn:normal_total_time_expression}
 \end{equation}
 where $X^i$ are the comoving spatial coordinates w.r.t the normal flow. From the \cref{eqn:def_normal_vector_upper} we obtain.
 \begin{equation}
-    \frac{d\mathbf{F}}{dt}=Nn^\mu\partial_\mu \mathbf{F}.
+    n^\mu\partial_\mu \mathbf{F}=\frac{d\mathbf{F}}{d\tau}=\frac{1}{N}\frac{d\mathbf{F}}{dt}.
     \label{eqn:relation_total_time_normal_vec}
+\end{equation}
+
+The fluid's time derivative, can relate the $D/Dt$ and $\partial_t|_{x^i}$ by,
+\begin{equation}
+    \frac{D\mathbf{F}}{Dt}=\left.\frac{\partial \mathbf{F}}{\partial t}\right|_{X^i}=\left.\frac{\partial \mathbf{F}}{\partial t}\right|_{x^i}+\left.\frac{\partial x^i}{\partial t}\right|_{X^i}\frac{\partial \mathbf{F}}{\partial x^i}=\left.\frac{\partial \mathbf{F}}{\partial t}\right|_{x^i}-\beta^i\frac{\partial \mathbf{F}}{\partial x^i},
+    \label{eqn:fluid_total_time_expression}
+\end{equation}
+where now $X^i$ are the comoving spatial coordinates w.r.t the fluid flow. From the \cref{eqn:upper_lower_fluid} we obtain.
+\begin{equation}
+    u^\mu\partial_\mu \mathbf{F}=\frac{d\mathbf{F}}{d\tau_0}=\frac{\Gamma}{N}\frac{D\mathbf{F}}{Dt}.
+    \label{eqn:relation_total_time_fluid_vec}
 \end{equation}
 
 
 
 \section{Kinematical quantities}
 
+In the 3+1 formalism, it is useful to introduce the spatial connection $\mathbf{D}$, i.e. the three-covariant derivative associated with the metric $\mathbf{h}$, is defined as
+\begin{equation}
+    D_\mu T^{\alpha_1\cdots\alpha_p}{}_{\beta_1\cdots\beta_q}=h^{\alpha_1}_{\gamma_1}\cdots h^{\alpha_p}_{\gamma_p}h^{\delta_1}_{\beta_1}\cdots h^{\delta_q}_{\beta_q} h_\mu^\nu \nabla_\nu T^{\gamma_1\cdots\gamma_p}{}_{\delta_1\cdots\delta_q},
+    \label{eqn:spatial_cov_dev_def}
+\end{equation}
+where $\nabla$ is the four-covariant derivative. Here the spatial connection satisfies the metric compatability,
+\begin{equation}
+    D_\mu h_{\alpha\beta}=0.
+\end{equation}
+
+The Frobenius theorem in \cref{app:frobenius} states that a foliation orthogonal to the fluid is only possible when there is no vorticity, and furthermore we will see that the three-torsion is proportional to vorticity (in the observers frame).
+Therefore this connection has to be torsion-free, and a Levi-Civita connection. 
+Notice that here we construct the connection around the observer, by using $\mathbf{h}$, if we were to use the fluid we would obtain a connection with metric compatability but under the presence of torsion. 
+
+The acceleration vector is given by
+\begin{equation}
+    A_\alpha:=n^\mu \nabla_\mu n_\alpha=D_\alpha\ln N,
+\end{equation}
+where in the last equality we used \cref{eqn:def_normal_vector_upper,eqn:def_normal_vector_lower}. 
+Here it is noticable that if $N=1$ we describe a geodesic observer.
+
+One can decompose the four-velocity of the normal vector using \cref{eqn:spatial_cov_dev_def}
+\begin{equation}
+    \nabla_\beta n_\alpha = g_\beta^\mu \nabla_\mu n_\alpha = (h_\beta^\mu-n_\beta n^\mu)\nabla_\mu n_\alpha=-n_\beta A_\alpha + D_\beta n_\alpha,
+\end{equation}
+where the last term is the extrinsic curvature, given by
+\begin{equation}
+    K_{\alpha\beta}:=D_\beta n_\alpha. 
+\end{equation}
+
+The extrinsic curvature is a type of curvature in hypersurfaces, that defines the bending of the hypersurface domain $\Sigma$ in the spacetime manifold $\mathcal{M}$.
+It can be decomposed into a traceful and traceless part by
+\begin{equation}
+    K_{\alpha\beta}=\frac{1}{3}Kh_{\alpha\beta}+A_{\alpha\beta},
+\end{equation}
+where $K$ and $A_{\alpha\beta}$ are, respectively, the rate of expansion and shear viewed from the observer's perspective.
+If a tensor field is tangent to the normal vector, e.g. $n^\nu K_{\mu\nu}=0$, then all its independent information lies in $K_{ij}$, which is the usual form we encounter in literature.
 
 
-\section{Dynamical equations}
+In the fluid's perspective the extrinsic curvature is
+\begin{equation}
+    \Theta_{\alpha\beta}:=D^{(\mathbf{u})}_\beta u_\alpha=\frac{1}{3}\Theta b_{\alpha\beta} + \sigma_{\alpha\beta} + w_{\alpha\beta},
+\end{equation}
+where $\Theta$, $\sigma_{\alpha\beta}$ and $w_{\alpha\beta}$ are the rate of expansion, shear and vorticity of the fluid.
 
-With this, we can rewrite the metric and extrinsic curvature evolutions,
+From the spatial connection introduced, we also obtain a new type of curvature, the intrinsic curvature $\prescript{3}{}{\mathbf{R}}$.
+The intrinsic curvature measures the non-commutativity between two consecutive three-covariant derivates $\mathbf{D}$, by the Ricci identity:
+\begin{equation}
+    \left[D_i,D_j\right]v^k=\prescript{3}{}R^{k}{}_{lij}v^l,
+    \label{eqn:spatial_ricci_identity}
+\end{equation}
+where $\mathbf{v}$ is a spatial vector and the prescript 3 indicates explicitely the quantity is spatial. 
+When building the formalism using the fluid flow, it would yield an additional term proportional to a non-zero torsion $\prescript{3}{}{\mathbf{T}}$.%+h^k_m \prescript{3}{}T^{l}{}_{ij}\nabla_l v^m
+
+
+\section{Gauss-Codazzi-Ricci Relations}
+
+In this section we will introduce the decompositions of the spacetime Riemann tensor derived in \cref{app:gauss,app:codazzi,app:ricci}.
+These decompositions are in terms of the quantities in the previous section, namely the Riemann tensor associated with the metric $\mathbf{h}$, $\prescript{3}{}{\mathbf{R}}$, the extrinsic curvature $\mathbf{K}$, and the acceleration vector $\mathbf{A}$.
+
+Throughout these relations we will not consider the extrinsic curvature symmetric. 
+This choice is made so we can easily relate to the relations obtained using the fluid flow, where the vortivity is generally non-zero.
+
+In \cref{app:gauss} we obtained
 \begin{align}
-    \mathcal{L}_n h_{ij} &= 2K_{ij} \Leftrightarrow\\
-    \Leftrightarrow \frac{1}{N}(\partial_t - \mathcal{L}_\beta) h_{ij} &= 2K_{ij} \Leftrightarrow\\
-    \label{eqn:general_metric_evolution_basis}
-    \Leftrightarrow \partial_t h_{ij} &= 2NK_{ij}+\beta^k \partial_k h_{ij} + h_{ik}\partial_j \beta^k + h_{kj}\partial_i \beta^k\Leftrightarrow\\
-    \label{eqn:general_metric_evolution_fluid}
-    \Leftrightarrow \frac{d h_{ij}}{dt} &= 2NK_{ij}+(NV^k) \partial_k h_{ij} + h_{ik}\partial_j \beta^k + h_{kj}\partial_i \beta^k
+    \perp_{\mathbf{n}} R^\alpha{}_{\beta\gamma\delta} = \prescript{3}{}R^\alpha{}_{\beta\gamma\delta}+K^\alpha{}_\gamma K_{\beta\delta}-K^\alpha{}_\delta K_{\beta\gamma}.
 \end{align}
+
+Contracting the $\alpha$ and $\gamma$ indeces in the Gauss relation, we obtain
+\begin{align}
+    \perp_{\mathbf{n}} R_{\alpha\delta}  = \prescript{3}{}R_{\alpha\delta}+KK_{\alpha\delta}-K^\gamma{}_\delta K_{\alpha\gamma} - h^\beta_\alpha h^\mu_\delta R_{\epsilon\beta\phi\mu} n^\phi n^\epsilon,
+    \label{eqn:gauss_relation_proj}
+\end{align}
+where the last term, we want the $\phi$ and $\epsilon$ to be the second and last indices of the Riemann tensor and using the Ricci relation in \cref{app:ricci}
+\begin{align}
+    h^\beta_\alpha h^\mu_\delta R_{\epsilon\beta\phi\mu} n^\phi n^\epsilon= h_{\beta\alpha} h^\mu_\delta R^\beta{}_{\epsilon\mu\phi} n^\phi n^\epsilon = \perp_u(R_{\alpha\epsilon\delta\phi} n^\phi n^\epsilon) = D_\delta A_\alpha + A_\alpha A_\delta + K^\beta{}_\delta K_{\beta\alpha} - \dot{K}_{\alpha\delta},
+    \label{eqn:ricci_relation}
+\end{align}
+where we define the overdot as $\dot{\mathbf{T}}=\mathcal{L}_{\mathbf{n}}\mathbf{T}$.
+
+Inserting \cref{eqn:ricci_relation} in \cref{eqn:gauss_relation_proj}
+\begin{align}6
+    \perp_{\mathbf{n}} R_{\alpha\delta}=\prescript{3}{}R_{\alpha\delta}+K K_{\alpha\delta}- D_\delta A_\alpha - A_\alpha A_\delta + \dot{K}_{\alpha\delta} -K^\beta{}_\delta (K_{\alpha\beta}+K_{\beta\alpha}).
+    \label{eqn:ricci_spatial_proj}
+\end{align}
+
+
+From the Ricci relation in \cref{app:ricci},
+\begin{align}
+    &\perp_{\mathbf{n}} (R^\alpha{}_{\beta\gamma\delta} n^\beta n^\delta) = D_\gamma A^\alpha + A^\alpha A_\gamma + K^\delta{}_\gamma K_\delta{}^\alpha - \dot{K}^\alpha{}_\gamma \Leftrightarrow \times \delta^\gamma_\alpha\\
+    &\Leftrightarrow  R_{\beta\delta}n^\beta n^\delta = D_\alpha A^\alpha + A^\alpha A_\alpha + K^\delta{}_\alpha K_\delta{}^\alpha -\dot{K}.
+    \label{eqn:ricci_time_proj}
+\end{align}
+
+
+Contracting the indeces in \cref{eqn:ricci_spatial_proj} and using \cref{eqn:ricci_time_proj}, we get the Ricci scalar decomposition:
+\begin{align}
+    R = \prescript{3}{}R+K^2 - 2(D^\alpha A_\alpha +  A_\alpha A^\alpha) + 2\dot{K}-2K^{\alpha\beta}K_{\alpha\beta}-K^{\beta\alpha}K_{\alpha\beta}.
+    \label{eqn:ricci_scalar_decomp}
+\end{align}
+
+
+
+\section{3+1 Decomposition of the Einstein equation}
+
+Considering a spacetime that obeys the Einstein equation:
+\begin{equation}
+    \mathbf{R}-\frac{1}{2}R\mathbf{g}=\kappa^2 \mathbf{T},
+    \label{eqn:einstein_formalism}
+\end{equation}
+where $\kappa^2=8\pi G$. It can also be written as
+\begin{equation}
+    \mathbf{R}=\kappa^2 \left(\mathbf{T}-\frac{1}{2}T\mathbf{g}\right),
+    \label{eqn:einstein_equiv}
+\end{equation}
+where $T$ is trace of the EM tensor.
+
+We can project these equations in three ways: a full projection along the normal vector (and perpendicular to $\Sigma$); a mixed projection along the normal vector and the hypersurface; and a full projection onto $\Sigma$.
+
+Projecting the \cref{eqn:einstein_formalism} along the normal vector in
+\begin{equation}
+    n^\mu n^\nu R_{\mu\nu}+\frac{1}{2}R=\kappa^2 T_{\mu\nu}n^\mu n^\nu,
+\end{equation}
+by using \cref{eqn:ricci_time_proj,eqn:ricci_scalar_decomp,eqn:general_decomposition_energy_tensor_normal}, we obtain the energy equation:
+\begin{equation}
+    \frac{1}{2}\left(\prescript{3}{}R+K^2-K_{\mu\nu}K^{\mu\nu}\right)=\kappa^2 E,
+\end{equation}
+the equivalent equation for the fluid flow is
+\begin{equation}
+    \frac{1}{2}\left(\prescript{3}{}R_{(\mathbf{u})}+\Theta^2-\Theta_{\mu\nu}\Theta^{\nu\mu}\right)=\kappa^2\rho,
+\end{equation}
+where we stress the order of the indeces in the last term inside the curved brackets.
+
+
+
+
+\section{Dynamical Equations}
+
+
+From another definition of the extrinsic curvature with no vorticity:
+\begin{align}
+    K_{ij} := \frac{1}{2} \mathcal{L}_{\mathbf{n}} h_{ij}
+\end{align}
+we obtain a evolution equation for the metric $\mathbf{h}$:
+\begin{equation}
+    \frac{d h_{ij}}{dt} = 2NK_{ij}+(NV^k) \partial_k h_{ij} + h_{ik}\partial_j \beta^k + h_{kj}\partial_i \beta^k
+\end{equation}
+
+
+
 
 
 
