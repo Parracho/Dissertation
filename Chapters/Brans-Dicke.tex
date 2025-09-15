@@ -8,7 +8,7 @@ In fact, Robert Dicke and Carl Brans, exploited this possibility with a time dep
 
 \section{Jordan-Brans-Dicke theory}
 
-The simplest way of introducing a time-dependent gravitational constant is represented in the so-called Jordan frame by the following action,
+The simplest way of introducing a time-dependent gravitational constant is represented in the so-called Jordan frame by the following action:
 \begin{equation}
     S_{\text{JBD}}=\int_{\mathcal{M}} d^4x\left[ \sqrt{-g}\frac{1}{2k'}\left[R\phi-\omega \frac{\phi_{,\rho}\phi^{,\rho}}{\phi}\right]+\sqrt{-g}\mathcal{L}_m\right]
     \label{eqn:BD_action_JF}
@@ -19,7 +19,7 @@ In this action, matter is not directly coupled to $\phi$, in the sense that the 
 
 \subsection{Jordan frame}
 
-The field equations of the Brans-Dicke theory are,
+The field equations of the Brans-Dicke theory:
 \begin{align}
 G_{\mu\nu}=k'\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)\right\},
 \label{eqn:field_eq_metric}
@@ -28,7 +28,7 @@ G_{\mu\nu}=k'\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\
     \Box\phi=\frac{k'T^{(m)}}{2\omega+3},
     \label{eqn:field_eq_phi}
 \end{equation}
-where,
+where
 \begin{equation}
     T_{\mu\nu}^{(m)} := \frac{-2}{\sqrt{-g}} \frac{\delta\left(\sqrt{-g} \mathcal{L}^{(m)}\right)}{\delta g^{\mu\nu}}
     \label{eqn:def_em_tensor}
@@ -37,11 +37,11 @@ is the energy-momentum tensor for ordinary matter. A full derivation of the fiel
 
 In \cref{eqn:field_eq_phi}, it is clear the scalar field is sourced by matter with non zero trace, i.e. $T^{(m)}\neq 0$ (this type of matter is usually called non-conformal matter for reasons that will apparent in the next section). From the relation between matter and the scalar field in the field equation of $\phi$, one would be lead to believe there is a coupling between the two, however even in the derivation this relation only happens via the field equation of the metric, hence a minimal coupling between matter and $\phi$.
 
-By defining an effective energy-momentum tensor as,
+By defining an effective energy-momentum tensor as
 \begin{equation}
     T^{\mathrm{eff}}_{\mu\nu}=\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right),
 \end{equation}
-we see that its components w.r.t the observer's four-velocity $n_\mu$, are as follows. The energy density,
+we see that its components w.r.t the observer's four-velocity $n_\mu$, are as follows. The energy density:
 \begin{align}
     E &= T_{\mu\nu}n^\mu n^\nu=\left[\frac{T^{(M)}_{\mu \nu}}{\phi}+\frac{1}{k'}\left(\frac{1}{\phi}\left(\nabla_\mu \nabla_\nu \phi-g_{\mu \nu} \square \phi\right)+\frac{\omega}{\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2} g_{\mu \nu}(\nabla \phi)^2\right]\right)\right]n^\mu n^\nu\nonumber\\
     &=\frac{E_m}{\phi}+\frac{\omega}{k'\phi^2}\left((n^\mu\partial_\mu \phi)(n^\nu\partial_\nu\phi)-\frac{1}{2}g_{\mu\nu}n^\mu n^\nu (\nabla \phi)^2\right)+\frac{1}{k'\phi}\left(n^\mu n^\nu \nabla_\mu \nabla_\nu - g_{\mu\nu}n^\mu n^\nu \Box\right)\phi\nonumber\\
@@ -49,7 +49,7 @@ we see that its components w.r.t the observer's four-velocity $n_\mu$, are as fo
     &=\frac{E_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\frac{1}{2}\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2+\frac{1}{2}h^{\mu\nu}D_\mu\phi D_\nu\phi\right)+\frac{1}{k'\phi}\left[D^\alpha D_\alpha\phi-\frac{K}{N}\frac{d\phi}{dt}\right]
     \label{eqn:energy_density_jf}
 \end{align}
-where we use the \cref{eqn:relation_total_time_normal_vec}. And the pressure is given by,
+where we use the \cref{eqn:relation_total_time_normal_vec}. And the pressure is given by
 \begin{align}
     S&=T_{\mu\nu}h^{\mu\nu}=\frac{S_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\frac{3}{2}\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2 -\frac{1}{2}h^{\alpha\beta} D_\alpha\phi D_\beta\phi\right)+\label{eqn:pressure_jf}\\
     &\qquad\qquad\qquad\qquad\qquad+\frac{1}{k'\phi}\left[3N\frac{d^2\phi}{dt^2}-3\frac{d\phi}{dt}\frac{dN}{dt}-3A^\mu\nabla_\mu\phi -2D^\alpha D_\alpha \phi+2\frac{K}{N}\frac{d\phi}{dt} \right],\nonumber
@@ -59,7 +59,7 @@ where we use $D_\mu \phi = h_\mu^\alpha \nabla_\alpha\phi \Leftrightarrow h^\mu_
 
 
 
-It is useful to determine,
+It is useful to determine
 \begin{align}
     E+S&=\frac{E_m+S_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\frac{1}{N}\frac{d\ln\phi}{dt}\right)^2+\frac{1}{k'\phi}\left[\frac{3}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)-3A^\mu\nabla_\mu\phi-D^\alpha D_\alpha\phi+\frac{K}{N}\frac{d\phi}{dt}\right].
     \label{eqn:raych_useful}
@@ -72,53 +72,53 @@ It is useful to determine,
 In 1961, Brans and Dicke showed that under a conformal transformation, in \cref{eqn:def_conf_transf}, the Brans-Dicke action can recover a form similar to the Hilbert-Einstein action \cite{Brans_1961}, we call this the Einstein frame. This is a very common technique used in gravitational theories and cosmology, to go from the Jordan frame to the Einstein frame.
 
 
-By reviewing the action in \cref{eqn:BD_action_JF}, and (eq do ricci),
+By reviewing the action in \cref{eqn:BD_action_JF}, and (eq do ricci):
 \begin{align}
     S_{\text{JBD}}=&\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\Omega^4\frac{1}{2k'}\left[\Omega^{-2}\left(\Tilde{R}-6\Tilde{\nabla}_\mu\Tilde{\nabla}^\mu\ln\Omega-6\Tilde{\nabla}_\mu\ln\Omega\Tilde{\nabla}^\mu\ln\Omega\right)\phi-\omega \frac{\Omega^{-2}\Tilde{\nabla}_\mu\phi\Tilde{\nabla}^\mu\phi}{\phi}\right]\nonumber\\
     &+\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\Omega^4\mathcal{L}_m(\Omega^{-2}\Tilde{g}^{\mu\nu},\Psi),
     \label{eqn:bd_ef_1}
 \end{align}
-where if we choose the conformal factor to be,
+where if we choose the conformal factor to be
 \begin{equation}
     \Omega^2=(G\phi)^{-1},
 \end{equation}
-the corresponding action will be,
+the corresponding action will be
 \begin{align}
     S_{\text{EF}}=&\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\frac{1}{2k}\left[\Tilde{R}+3\Tilde{\nabla}_\mu\Tilde{\nabla}^\mu\ln\phi-\frac{3}{2}\Tilde{\nabla}_\mu\ln\phi\Tilde{\nabla}^\mu\ln\phi-\omega \frac{\Tilde{\nabla}_\mu\phi\Tilde{\nabla}^\mu\phi}{\phi^2}\right]\nonumber\\
     &+\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\Omega^4\mathcal{L}_m(\Omega^{-2}\Tilde{g}^{\mu\nu},\Psi),
     \label{eqn:bd_ef_2}
 \end{align}
-and hence, we obtain an action written in the Einstein frame. We can further simplify by noting the second term, inside the square brackets, is a surface term and therefore is removed from our action, turning our action into,
+and hence, we obtain an action written in the Einstein frame. We can further simplify by noting the second term, inside the square brackets, is a surface term and therefore is removed from our action, turning our action into:
 \begin{align}
     S_{\text{EF}}=&\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\left[\frac{\Tilde{R}}{2k}-\frac{1}{2k}\left(\frac{3}{2}+\omega\right)\Tilde{\nabla}_\mu\ln\phi\Tilde{\nabla}^\mu\ln\phi+\Omega^4\mathcal{L}_m(\Omega^{-2}\Tilde{g}^{\mu\nu},\Psi)\right].
     \label{eqn:bd_ef_3}
 \end{align}
 
-We can define a new scalar field $\varphi$ as,
+We can define a new scalar field $\varphi$ as
 \begin{equation}
     \varphi =\sqrt{\frac{3+2\omega}{2k}}\ln\phi.
 \end{equation}
 
 In \cref{eqn:bd_ef_3}, we still do not have the matter Lagrangian written in the Einstein frame. In fact, depending on the ordinary matter being treated, this will acquire vastly different situations. These differences are due to two types of matter: 
 
-\textbf{Conformal matter}, the Lagrangian scales with the conformal factor in the following way,
+\textbf{Conformal matter}, the Lagrangian scales with the conformal factor in the following way:
 \begin{equation}
 \mathcal{L}_m(g^{\mu\nu}\Omega^{-2},\Psi)=\Omega^{-4}\mathcal{L}_m(\Tilde{g}^{\mu\nu},\Psi),
 \end{equation}
-therefore making $\sqrt{-g}\mathcal{L}_m$ conformally invariant. This scaling can arise, for example, in radiation fields and scalar fields with a zero or quadratic potential. For example, the Maxwell field,
+therefore making $\sqrt{-g}\mathcal{L}_m$ conformally invariant. This scaling can arise, for example, in radiation fields and scalar fields with a zero or quadratic potential. For example, the Maxwell field:
 \begin{align}
      \mathcal{L}_m(g^{\mu\nu},A_\mu)&=-\frac{1}{4}F^{\mu\nu}F_{\mu\nu}=-\frac{1}{4}g^{\mu\alpha}g^{\nu\beta}F_{\alpha\beta}F_{\mu\nu}=-\frac{1}{4}\Omega^{-4}\Tilde{g}^{\mu\alpha}\Tilde{g}^{\nu\beta}F_{\alpha\beta}F_{\mu\nu}=\nonumber\\
      &=\Omega^{-4}\mathcal{L}_m(\Tilde{g}^{\mu\nu},\Tilde{A}_\mu),
 \end{align}
 where the Maxwell tensor is and has $\Tilde{F}_{\alpha\beta}=F_{\alpha\beta}$.
 
-From \cref{eqn:def_em_tensor}, the energy-momentum tensor scales by,
+From \cref{eqn:def_em_tensor}, the energy-momentum tensor scales by
 \begin{equation}
     T_{\mu\nu}=\Omega^2\Tilde{T}_{\mu\nu},
 \end{equation}
 and is traceless, i.e. $T=T^\mu_\mu=0$. This choice is seen in Brans' paper of 1961 \cite{Brans_1961}, and this recent paper \cite{quiros2025}, contains proofs for a radiative field, a fermionic field and a perfect fluid.
 
-\textbf{Non-conformal matter}, where the Lagrangian does not scale with the conformal factor, and therefore, from \cref{eqn:def_em_tensor}, the energy-momentum tensor scales as,
+\textbf{Non-conformal matter}, where the Lagrangian does not scale with the conformal factor, and therefore, from \cref{eqn:def_em_tensor}, the energy-momentum tensor scales as
 \begin{equation}
     T_{\mu\nu}=\Omega^{-2}\Tilde{T}_{\mu\nu},
 \end{equation}
@@ -126,37 +126,42 @@ and has a non zero trace. With this matter we obtain a coupling between the matt
 
 \textcolor{blue}{Deixar claro qual o tipo de materia que se vai usar}
 
-Therefore, the action in \cref{eqn:bd_ef_3},
+Therefore, the action in \cref{eqn:bd_ef_3}:
 \begin{equation}
     S_{\text{EF}}=\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\left[\frac{\Tilde{R}}{2k}-\frac{1}{2}\Tilde{\nabla}_\mu\varphi\Tilde{\nabla}^\mu\varphi+\frac{1}{G^2\phi^2}\mathcal{L}_m(\Tilde{g}^{\mu\nu},\Psi)\right].
     \label{eqn:bd_ef_4}
 \end{equation}
 
-With help from the \cref{app:brans}, we can determine the variation w.r.t the metric of the Einstein frame's action to be,
+With help from the \cref{app:brans}, we can determine the variation w.r.t the metric of the Einstein frame's action to be
 \begin{equation}
     \delta_{\Tilde{g}} S = \int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}} \delta \Tilde{g}^{\mu\nu}\left\{\frac{\Tilde{G}_{\mu\nu}}{2k}-\frac{1}{2}\left(\Tilde{\nabla}_\mu\varphi\Tilde{\nabla}_\nu\varphi-\frac{1}{2}g_{\mu\nu}\Tilde{\nabla}_\lambda\varphi\Tilde{\nabla}^\lambda\varphi\right)-\frac{1}{2}\alpha(\varphi)\Tilde{T}_{\mu\nu}^{(m)}\right\}
 \end{equation}
-and w.r.t the scalar field,
+where $\alpha(\varphi)=\exp\left(-2\sqrt{\frac{2k}{3+2\omega}}\varphi\right)/G^2$ refers to the coupling between matter and the field $\varphi$. And w.r.t the scalar field:
 \begin{equation}
-    \delta_\varphi S=  \int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\delta\varphi \Tilde{\Box}\varphi +\delta_\varphi S_m(\Omega^{-2}\tilde{g}^{\mu\nu}),
+    \delta_\varphi S=  \int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\delta\varphi \Tilde{\Box}\varphi +\delta_\varphi S_m(g^{\mu\nu}).
 \end{equation}
-where $\alpha(\varphi)=\exp\left(-2\sqrt{\frac{2k}{3+2\omega}}\varphi\right)/G^2$ refers to the coupling between matter and the field $\varphi$. By taking $\delta_{\Tilde{g}} S=0$ and $\delta_\varphi S=0$, we obtain the following field equations,
+The extra term can be varied as
+\begin{equation}
+    \delta_\varphi S_m(g^{\mu\nu})=\delta_{\varphi} g^{\mu\nu} \frac{\delta S_m(g^{\mu\nu})}{\delta g^{\mu\nu}}=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}(-\rho_m+3P_m).
+\end{equation}
+
+By taking $\delta_{\Tilde{g}} S=0$ and $\delta_\varphi S=0$, we obtain the following field equations:
 \begin{align}
     &\Tilde{G}_{\mu\nu}=k\left\{ \alpha(\varphi)\Tilde{T}_{\mu\nu}^{(m)} + \left(\Tilde{\nabla}_\mu\varphi\Tilde{\nabla}_\nu\varphi-\frac{1}{2}g_{\mu\nu}\Tilde{\nabla}_\lambda\varphi\Tilde{\nabla}^\lambda\varphi\right) \right\},\label{eqn:field_metric_ef}\\
-    &\Tilde{\Box}\varphi=\frac{\delta(\alpha(\varphi)\mathcal{L}_m(\Tilde{g}^{\mu\nu},\Psi))}{\delta\varphi}.\label{eqn:field_scalar_ef}
+    &\Tilde{\Box}\varphi=\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}(-\rho_m+3P_m).\label{eqn:field_scalar_ef}
 \end{align}
 
 
-As seen in the Jordan frame, we can write the RHS of \cref{eqn:field_metric_ef}, as an effective energy-momentum tensor (conformal) given by,
+As seen in the Jordan frame, we can write the RHS of \cref{eqn:field_metric_ef}, as an effective energy-momentum tensor (conformal) given by
 \begin{equation}
     \Tilde{T}^{\mathrm{eff}}_{\mu\nu}:=\alpha(\varphi)\Tilde{T}_{\mu\nu}^{(m)} + \Tilde{\nabla}_\mu\varphi\Tilde{\nabla}_\nu\varphi-\frac{1}{2}g_{\mu\nu}\Tilde{\nabla}_\lambda\varphi\Tilde{\nabla}^\lambda\varphi,
 \end{equation}
-and its energy density according to the conformal observer is,
+and its energy density according to the conformal observer is
 \begin{equation}
     \Tilde{E}=\Tilde{T}^{\mathrm{eff}}_{\mu\nu}\Tilde{n}^\mu\Tilde{n}^\nu =\alpha(\varphi)\Tilde{E}_m+\frac{1}{2}\left(\frac{1}{\Tilde{N}}\frac{d\varphi}{dt}\right)^2+\frac{1}{2}\Tilde{D}_\lambda\varphi\Tilde{D}^\lambda\varphi,
     \label{eqn:energy_density_ef}
 \end{equation}
-and the pressure is,
+and the pressure is
 \begin{equation}
 \Tilde{S}=\Tilde{T}^{\mathrm{eff}}_{\mu\nu}\Tilde{h}^{\mu\nu}=3\alpha(\varphi)\Tilde{S}_m+\frac{3}{2}\left(\frac{1}{\Tilde{N}}\frac{d\varphi}{dt}\right)^2-\frac{1}{2}\Tilde{D}_\lambda\varphi\Tilde{D}^\lambda\varphi
     \label{eqn:pressure_ef}
@@ -164,36 +169,68 @@ and the pressure is,
 
 
 
+In this frame, due to the direct coupling between matter and the scalar field, the conservation law of the matter EM tensor transforms as
+\begin{align}
+    \tilde{\nabla}_\alpha\tilde{T}^{\alpha\beta}_{(m)}&=\tilde{\nabla}_\alpha\left(\Omega^{6} T_{(m)}^{\alpha\beta}\right)=\nabla_\alpha\left(\Omega^{6} T_{(m)}^{\alpha\beta}\right)+\Omega^6\left(C^\alpha_{\alpha\lambda}T_{(m)}^{\lambda\beta}+C^\beta_{\alpha\lambda}T_{(m)}^{\alpha\lambda}\right)\nonumber\\
+    &=\Omega^6 \nabla_\alpha T_{(m)}^{\alpha\beta}+6 \Omega^{5} T_{(m)}^{\alpha\beta} \nabla_\alpha \Omega-\Omega^5\left[4T_{(m)}^{\lambda\beta} \nabla_\lambda \Omega + T_{(m)}^{\alpha\lambda}\left(\delta^\beta_\alpha\nabla_\lambda + \delta^\beta_\lambda \nabla_\alpha- \tilde{g}_{\alpha\lambda}\nabla^\beta\right)\Omega\right] \nonumber\\
+    &=\Omega^6 \nabla_\alpha T_{(m)}^{\alpha\beta}+6 \Omega^{5} T_{(m)}^{\alpha\beta} \nabla_\alpha \Omega-\Omega^5\left[4T_{(m)}^{\lambda\beta} \nabla_\lambda \Omega +\left( T_{(m)}^{\beta\lambda}\nabla_\lambda +  T_{(m)}^{\alpha\beta}\nabla_\alpha-  T_{(m)}\Omega^{-2}\nabla^\beta\right)\Omega\right]\nonumber\\
+    &=\Omega^6 \nabla_\alpha T_{(m)}^{\alpha\beta}+\Omega^3 T^{(m)}\nabla^\beta\Omega=\Omega^3 T^{(m)}\nabla^\beta\Omega.
+    \label{eqn:conserv_law_conf_1}
+\end{align}
+
+
+By noticing the trace of the EM tensor transforms as
+\begin{equation}
+    \tilde{T}^{(m)} \equiv \tilde{g}^{\alpha\beta} \tilde{T}_{\alpha\beta}^{(m)}=\Omega^{4} T^{(m)} .
+\end{equation}
+
+Therefore, $\tilde{T}^{(m)}$ vanishes iff. $T^{(m)}=0$. Then \cref{eqn:conserv_law_conf_1} becomes
+\begin{equation}
+    \tilde{\nabla}_\alpha \tilde{T}_{(m)}^{\alpha\beta}=\tilde{T}^{(m)}\tilde{\nabla}^\beta(\ln \Omega).
+\end{equation}
+
+
+In the JBD theory the choice of transfomation is $\Omega=(G \phi)^{-1/2}$, then we obtain
+\begin{equation}
+    \tilde{\nabla}_\alpha \tilde{T}_{(m)}^{\alpha\beta}=-\frac{1}{2} \tilde{T}^{(m)} \tilde{\nabla}^\beta \ln\phi,
+\end{equation}
+
+
+or, in terms of the new scalar field:
+\begin{equation}
+    \tilde{\nabla}_\alpha \tilde{T}_{(m)}^{\alpha\beta}=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}} \tilde{T}^{(m)} \tilde{\nabla}^\beta \varphi.
+\end{equation}
+
 
 \section{Bergmann-Wagoner theory}
 
-Bergmann \cite{Bergmann1968} and Wagoner \cite{wagoner1970} proposed the most general scalar-tensor theory of gravitation, by introducing a cosmological function $\Lambda(\phi)$ and a $\phi$-dependent coupling, $\omega:=\omega(\phi)$, yield the following action,
+Bergmann \cite{Bergmann1968} and Wagoner \cite{wagoner1970} proposed the most general scalar-tensor theory of gravitation, by introducing a cosmological function $\Lambda(\phi)$ and a $\phi$-dependent coupling, $\omega:=\omega(\phi)$, yield the following action:
 \begin{equation}
     S_{\text{BW}}=\int_{\mathcal{M}} d^4x\left[ \sqrt{-g}\frac{1}{2k'}\left[R\phi-\omega \frac{\phi_{,\rho}\phi^{,\rho}}{\phi}-V(\phi)\right]+\sqrt{-g}\mathcal{L}_m\right].
     \label{eqn:BD_action_JF}
 \end{equation}
 
-It can be shown that the JBD theory is a special case of BW theory, by,
+It can be shown that the JBD theory is a special case of BW theory, by
 \begin{equation}
     \omega(\phi)=\omega=C^{te},\qquad \Lambda(\phi)=0.
 \end{equation}
 
-Under the variational principle, the variation w.r.t the metric, will be the same as in \cref{eqn:appendix_delta_metric} with an extra term,
+Under the variational principle, the variation w.r.t the metric, will be the same as in \cref{eqn:appendix_delta_metric} with an extra term:
 \begin{equation}
     \delta_g \int_{\mathcal{M}}d^4x\sqrt{-g}\frac{1}{2k'}\Lambda(\phi) = \frac{1}{2k'}\int_{\mathcal{M}}d^4x\sqrt{-g}\left(\frac{1}{2}\Lambda(\phi)g_{\mu\nu}\right),
 \end{equation}
-this will yield the following field equation,
+this will yield the following field equation:
 \begin{align}
 G_{\mu\nu}=k'\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)-\frac{\Lambda(\phi)g_{\mu\nu}}{2k'\phi}\right\}.
 \label{eqn:field_eq_metric_bw}
 \end{align}
 
-The variation w.r.t the scalar field, will be,
+The variation w.r.t the scalar field, will be
 \begin{equation}
     \delta_\phi S_{\mathrm{BW}}=\frac{1}{2k'}\int_{\mathcal{M}} d^4x\sqrt{-g}\left\{ R-\left(\frac{\omega}{\phi}+\frac{d\omega(\phi)}{d\phi}\right)\frac{\phi_{,\mu}\phi^{,\mu}}{\phi}+2\omega\frac{\Box\phi}{\phi}-\frac{d\Lambda(\phi)}{d\phi}\right\}\delta\phi
     \label{eqn:delta_phi_bw}
 \end{equation}
-which with $\delta_\phi S_{\mathrm{BW}}=0$ and the trace of \cref{eqn:field_eq_metric_bw},
+which with $\delta_\phi S_{\mathrm{BW}}=0$ and the trace of \cref{eqn:field_eq_metric_bw}:
 \begin{align}
     2\omega\Box\phi&=-\phi R+\left(\frac{\omega}{\phi}+\frac{d\omega(\phi)}{d\phi}\right)\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}\Leftrightarrow\nonumber\\
     \Leftrightarrow 2\omega\Box\phi&=\phi\left[\frac{k'T^{(m)}}{\phi}-\omega\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}-3\frac{\Box\phi}{\phi}\right]+\left(\frac{\omega}{\phi}+\frac{d\omega(\phi)}{d\phi}\right)\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}\Leftrightarrow\nonumber\\

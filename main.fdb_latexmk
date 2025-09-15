@@ -1,24 +1,24 @@
 # Fdb version 4
-["bibtex main"] 1757864108.9379 "main.aux" "main.bbl" "main" 1757864601.34734 0
+["bibtex main"] 1757943862.54952 "main.aux" "main.bbl" "main" 1757944369.02477 0
   "./Bibliography.bib" 1757753301 50035 5e033fd6f726129578ac4d3abf1fea3a ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtranN.bst" 1738985025 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "main.aux" 1757864597 24477 10a22184114ef93814ca60d0ab269b90 "xelatex"
+  "main.aux" 1757944365 25534 7d58c977827962b8de1d5c1d69e23a1d "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1757864599.59189 "main.xdv" "main.pdf" "main" 1757864601.38437 0
-  "main.xdv" 1757864597 770896 482383ecda310e5f8f4368c661991244 "xelatex"
+["xdvipdfmx"] 1757944367.42901 "main.xdv" "main.pdf" "main" 1757944369.06396 0
+  "main.xdv" 1757944365 799924 a7f0b33a1bba593bfe9380ef9d182221 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1757864592.10608 "c:/Users/parra/Documents/GitHub/Dissertation/main.tex" "main.xdv" "main" 1757864601.34816 0
+["xelatex"] 1757944360.43402 "c:/Users/parra/Documents/GitHub/Dissertation/main.tex" "main.xdv" "main" 1757944369.0254 0
   "Appendices/Variational.tex" 1757753301 10038 5bf2b950125d6ac59976c3d448dc3e8f ""
-  "Chapters/Backreaction.tex" 1757753301 11376 b2c540f42dddcf52f35c25b8dbc5bcd1 ""
-  "Chapters/Brans-Dicke.tex" 1757753301 15695 c5da1cc15ec40eed9999699a1e3dfa96 ""
-  "Chapters/Formalisms.tex" 1757864590 53180 a444857dd6295ae462bb9f96847855a2 ""
+  "Chapters/Backreaction.tex" 1757941524 11322 426f872bf2a319020b4d64095cdcb4c0 ""
+  "Chapters/Brans-Dicke.tex" 1757944358 18079 b6468c0a6987487ba423e6ac30f2f920 ""
+  "Chapters/Formalisms.tex" 1757939493 58649 0fcd33bb7e8bdb7c10841992864e8af2 ""
   "Chapters/Introduction.tex" 1757844460 2993 9ae50ebff8cb016a8ab41ad2de620c9b ""
-  "Chapters/LCA.tex" 1757753301 11591 dfcba67dcc512dd1e65c9c9a534fc1df ""
+  "Chapters/LCA.tex" 1757870208 11563 317dfc1f6d6ca867092b0b0e692a4e94 ""
   "Figures/domain_transportation.png" 1757753301 38376 f93170ccbbb2620119059845532e5dc5 ""
   "Thesis.cls" 1757753302 20606 d5820f933959d8202b5ce116f111f875 ""
   "c:/Users/parra/Documents/GitHub/Dissertation/main.tex" 1757753302 3826 89d998c003c6c30548facb3602702218 ""
@@ -321,14 +321,14 @@
   "c:/texlive/2024/texmf.cnf" 1738990985 713 e69b156964470283e0530f5060668171 ""
   "epigraphoverload.tex" 1757753302 1229 6dd9414e5b47083e75549dcf4cf895e6 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1757864597 24477 10a22184114ef93814ca60d0ab269b90 "xelatex"
-  "main.bbl" 1757864109 4133 d98c79a8071a729aebbcb2defae90bee "bibtex main"
-  "main.brf" 1757864597 751 9e550c1c37b7694cafdef1b868fe9356 "xelatex"
-  "main.glsdefs" 1757864597 516 f8361f33c1b42d1af012f1429dd6dc3d "xelatex"
-  "main.lof" 1757864597 665 7228b1d107790e3a6806b0bd1446be22 "xelatex"
-  "main.out" 1757864597 7387 25a1be263d3e1b69d1e8ceb8e4cfc2e4 "xelatex"
+  "main.aux" 1757944365 25534 7d58c977827962b8de1d5c1d69e23a1d "xelatex"
+  "main.bbl" 1757943863 4332 9dd6ac298472065656314df327f45ed5 "bibtex main"
+  "main.brf" 1757944365 809 962f6a204a800bafb3a88c4a00358606 "xelatex"
+  "main.glsdefs" 1757944365 516 f8361f33c1b42d1af012f1429dd6dc3d "xelatex"
+  "main.lof" 1757944365 665 7228b1d107790e3a6806b0bd1446be22 "xelatex"
+  "main.out" 1757944365 7084 da6e8924ba0112ed59c5a6dda4affa31 "xelatex"
   "main.tex" 1757753302 3826 89d998c003c6c30548facb3602702218 ""
-  "main.toc" 1757864597 3655 1e2a611e14f9a0fa651d63970f3301cd "xelatex"
+  "main.toc" 1757944365 3552 d06263ad525f39325ff5ad549fb11246 "xelatex"
   "preamble.tex" 1757753302 9043 c3e996caf36a4f960f13102e44abcc8b ""
   "precontent.tex" 1757753302 4203 bcd327c7b2fa0381a61817d952709fa4 ""
   "vars.tex" 1757753302 1929 b94adb4d1058691af4e26cf158bbca7d ""

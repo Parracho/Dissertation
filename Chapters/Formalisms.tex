@@ -461,15 +461,17 @@ The most important factor behind the usage of these two vectors, namely the Eule
 
 The decomposition with respect to the rest fluid is,
 \begin{equation}
-    T_{\mu\nu}=\rho u_\mu u_\nu + 2q_{(\mu}u_{\nu)} + \pi_{\mu\nu} + P b_{\mu\nu}
+    T_{\mu\nu}=\rho u_\mu u_\nu + 2q_{(\mu}u_{\nu)} + \pi_{\mu\nu} + P b_{\mu\nu},
     \label{eqn:general_decomposition_energy_tensor_fluid}
 \end{equation}
+where $\rho$ is the energy density, $q_\mu$ is the spatial heat vector, $\pi_{\mu\nu}$ is the spatial and traceless anisotropic pressure, and $P$ is the isotropic pressure, all w.r.t the fluid's rest frames.
 
 The decomposition with respect to the Normal frames,
 \begin{equation}
-    T_{\mu\nu} = E n_\mu n_\nu + 2J_{(\mu}n_{\nu)}+ S_{\mu\nu}
+    T_{\mu\nu} = E n_\mu n_\nu + 2J_{(\mu}n_{\nu)}+ S_{\mu\nu},
     \label{eqn:general_decomposition_energy_tensor_normal}
 \end{equation}
+where $E$ is the energy density of the fluid, $J_\mu$ is the momentum density, and $S_{\mu\nu}$ is the stress density, all w.r.t the normal vector.
 
 Now we want to see the relation between $E$ and $\rho$, so that later we can substitute it in the Friedmann equation.
 
@@ -484,6 +486,9 @@ The pressure,
     S=(\Gamma^2-1)\rho + (\Gamma^2+2)P+2\Gamma V^\alpha q_\alpha + V^\alpha V^\beta \pi_{\alpha\beta}
     \label{eqn:general_shear_fluid_normal}
 \end{equation}
+
+
+
 
 \section{Time derivatives}
 
@@ -540,6 +545,7 @@ Notice that here we construct the connection around the observer, by using $\mat
 The acceleration vector is given by
 \begin{equation}
     A_\alpha:=n^\mu \nabla_\mu n_\alpha=D_\alpha\ln N,
+    \label{eqn:acceleration_normal}
 \end{equation}
 where in the last equality we used \cref{eqn:def_normal_vector_upper,eqn:def_normal_vector_lower}. 
 Here it is noticable that if $N=1$ we describe a geodesic observer.
@@ -559,7 +565,7 @@ It can be decomposed into a traceful and traceless part by
     K_{\alpha\beta}=\frac{1}{3}Kh_{\alpha\beta}+A_{\alpha\beta},
 \end{equation}
 where $K$ and $A_{\alpha\beta}$ are, respectively, the rate of expansion and shear viewed from the observer's perspective.
-If a tensor field is tangent to the normal vector, e.g. $n^\nu K_{\mu\nu}=0$, then all its independent information lies in $K_{ij}$, which is the usual form we encounter in literature.
+If a tensor field is perpendicular to the normal vector, e.g. $n^\nu K_{\mu\nu}=0$, then all its independent information lies in $K_{ij}$, which is the usual form we encounter in literature.
 
 
 In the fluid's perspective the extrinsic curvature is
@@ -586,12 +592,23 @@ These decompositions are in terms of the quantities in the previous section, nam
 Throughout these relations we will not consider the extrinsic curvature symmetric. 
 This choice is made so we can easily relate to the relations obtained using the fluid flow, where the vortivity is generally non-zero.
 
+From the Codazzi relation in \cref{app:codazzi},
+\begin{align}
+    &\perp_u (R^\alpha{}_{\beta\gamma\delta} n^\beta)= h^\alpha_\epsilon h^\phi_\gamma h^\mu_\delta R^\epsilon{}_{\beta\phi\mu} u^\beta= 4 K_{[\alpha\delta]}A^\alpha + D_\gamma K^\alpha{}_\delta - D_\delta K^\alpha{}_\gamma \Leftrightarrow \times \delta_\gamma^\alpha\\
+    &\Leftrightarrow h^\phi_\epsilon h^\mu_\delta R^\epsilon{}_{\beta\phi\mu} n^\beta = 4 K_{[\alpha\delta]}A^\alpha + D_\alpha K^\alpha{}_\delta - D_\delta K^\alpha{}_\alpha \Leftrightarrow \\
+    &\Leftrightarrow (\delta^\phi_\epsilon + n^\phi n_\epsilon)h^\mu_\delta R^\epsilon{}_{\beta\phi\mu} n^\beta = 4 K_{[\alpha\delta]}A^\alpha + D_\alpha K^\alpha{}_\delta - D_\delta K \Leftrightarrow \\
+    &\Leftrightarrow \delta^\phi_\epsilon h^\mu_\delta R^\epsilon{}_{\beta\phi\mu} n^\beta  + h^\mu_\delta R^\epsilon{}_{\beta\phi\mu} n^\beta  n^\phi n_\epsilon = 4 K_{[\alpha\delta]}A^\alpha + D_\alpha K^\alpha{}_\delta - D_\delta K\Leftrightarrow \\
+    &\Leftrightarrow  h^\mu_\delta R^\epsilon{}_{\beta\epsilon\mu} n^\beta  + h^\mu_\delta \underbrace{R_{\epsilon\beta\phi\mu}}_{\beta \leftrightarrow \epsilon \text{ Anti-symmetric}}   n^\phi \underbrace{n^\beta n^\epsilon}_{\text{Symmetric}} = 4 \Theta_{[\alpha\delta]}A^\alpha + D_\alpha K^\alpha{}_\delta - D_\delta K \Leftrightarrow \\
+    &\Leftrightarrow h^\mu_\delta R_{\beta\mu} n^\beta = 4 K_{[\alpha\delta]}A^\alpha + D_\alpha K^\alpha{}_\delta - D_\delta K
+    \label{eqn:ricci_extradig_proj}
+\end{align}
+
 In \cref{app:gauss} we obtained
 \begin{align}
     \perp_{\mathbf{n}} R^\alpha{}_{\beta\gamma\delta} = \prescript{3}{}R^\alpha{}_{\beta\gamma\delta}+K^\alpha{}_\gamma K_{\beta\delta}-K^\alpha{}_\delta K_{\beta\gamma}.
 \end{align}
 
-Contracting the $\alpha$ and $\gamma$ indeces in the Gauss relation, we obtain
+Contracting the $\alpha$ and $\gamma$ indices in the Gauss relation, we obtain
 \begin{align}
     \perp_{\mathbf{n}} R_{\alpha\delta}  = \prescript{3}{}R_{\alpha\delta}+KK_{\alpha\delta}-K^\gamma{}_\delta K_{\alpha\gamma} - h^\beta_\alpha h^\mu_\delta R_{\epsilon\beta\phi\mu} n^\phi n^\epsilon,
     \label{eqn:gauss_relation_proj}
@@ -604,7 +621,7 @@ where the last term, we want the $\phi$ and $\epsilon$ to be the second and last
 where we define the overdot as $\dot{\mathbf{T}}=\mathcal{L}_{\mathbf{n}}\mathbf{T}$.
 
 Inserting \cref{eqn:ricci_relation} in \cref{eqn:gauss_relation_proj}
-\begin{align}6
+\begin{align}
     \perp_{\mathbf{n}} R_{\alpha\delta}=\prescript{3}{}R_{\alpha\delta}+K K_{\alpha\delta}- D_\delta A_\alpha - A_\alpha A_\delta + \dot{K}_{\alpha\delta} -K^\beta{}_\delta (K_{\alpha\beta}+K_{\beta\alpha}).
     \label{eqn:ricci_spatial_proj}
 \end{align}
@@ -613,20 +630,34 @@ Inserting \cref{eqn:ricci_relation} in \cref{eqn:gauss_relation_proj}
 From the Ricci relation in \cref{app:ricci},
 \begin{align}
     &\perp_{\mathbf{n}} (R^\alpha{}_{\beta\gamma\delta} n^\beta n^\delta) = D_\gamma A^\alpha + A^\alpha A_\gamma + K^\delta{}_\gamma K_\delta{}^\alpha - \dot{K}^\alpha{}_\gamma \Leftrightarrow \times \delta^\gamma_\alpha\\
-    &\Leftrightarrow  R_{\beta\delta}n^\beta n^\delta = D_\alpha A^\alpha + A^\alpha A_\alpha + K^\delta{}_\alpha K_\delta{}^\alpha -\dot{K}.
+    &\Leftrightarrow  R_{\beta\delta}n^\beta n^\delta = D_\alpha A^\alpha + A^\alpha A_\alpha - K^\delta{}_\alpha K_\alpha{}^\delta -\dot{K}.
     \label{eqn:ricci_time_proj}
 \end{align}
 
 
-Contracting the indeces in \cref{eqn:ricci_spatial_proj} and using \cref{eqn:ricci_time_proj}, we get the Ricci scalar decomposition:
+Contracting the indices in \cref{eqn:ricci_spatial_proj} and using \cref{eqn:ricci_time_proj}, we get the Ricci scalar decomposition:
 \begin{align}
-    R = \prescript{3}{}R+K^2 - 2(D^\alpha A_\alpha +  A_\alpha A^\alpha) + 2\dot{K}-2K^{\alpha\beta}K_{\alpha\beta}-K^{\beta\alpha}K_{\alpha\beta}.
+    R = \prescript{3}{}R+K^2 - 2(D^\alpha A_\alpha +  A_\alpha A^\alpha) + 2\dot{K}-K_{\alpha\beta}\dot{h}^{\alpha\beta}-K^{\alpha\beta}K_{\alpha\beta}.
     \label{eqn:ricci_scalar_decomp}
 \end{align}
 
 
 
-\section{3+1 Decomposition of the Einstein equation}
+
+
+\section{Dynamical Equations}
+
+
+From another definition of the extrinsic curvature with no vorticity:
+\begin{align}
+    K_{ij} := \frac{1}{2} \mathcal{L}_{\mathbf{n}} h_{ij},
+\end{align}
+i.e. the symmetric part of the extrinsic curvature. It is worth to note that $\mathcal{L}_{\mathbf{n}} h^{ij} \neq K^{ij}$ due to the Lie derivative's properties, in the \cref{app:formalism}. 
+From this we can get the evolution equation for the metric $\mathbf{h}$:
+\begin{equation}
+    \frac{d h_{ij}}{dt} = 2NK_{ij}+(NV^k) \partial_k h_{ij} + h_{ik}\partial_j \beta^k + h_{kj}\partial_i \beta^k
+\end{equation}
+
 
 Considering a spacetime that obeys the Einstein equation:
 \begin{equation}
@@ -646,47 +677,72 @@ Projecting the \cref{eqn:einstein_formalism} along the normal vector in
 \begin{equation}
     n^\mu n^\nu R_{\mu\nu}+\frac{1}{2}R=\kappa^2 T_{\mu\nu}n^\mu n^\nu,
 \end{equation}
-by using \cref{eqn:ricci_time_proj,eqn:ricci_scalar_decomp,eqn:general_decomposition_energy_tensor_normal}, we obtain the energy equation:
+by using \cref{eqn:ricci_time_proj,eqn:ricci_scalar_decomp,eqn:general_decomposition_energy_tensor_normal}, we obtain the energy equation or called Hamiltonian constraint \cite{Gourgoulhon:2012ffd}:
 \begin{equation}
     \frac{1}{2}\left(\prescript{3}{}R+K^2-K_{\mu\nu}K^{\mu\nu}\right)=\kappa^2 E,
+    \label{eqn:energy_equation_normal}
 \end{equation}
 the equivalent equation for the fluid flow is
 \begin{equation}
     \frac{1}{2}\left(\prescript{3}{}R_{(\mathbf{u})}+\Theta^2-\Theta_{\mu\nu}\Theta^{\nu\mu}\right)=\kappa^2\rho,
 \end{equation}
-where we stress the order of the indeces in the last term inside the curved brackets.
+where we stress the order of the indices in the last term inside the curved brackets.
 
+Projecting \cref{eqn:einstein_formalism} along the normal vector and the hypersurface:
+\begin{equation}
+    h^\mu_\alpha n^\nu R_{\mu\nu}=\kappa^2 T_{\mu\nu} h^\mu_\alpha n^\nu
+\end{equation}
+by using \cref{eqn:ricci_extradig_proj,eqn:general_decomposition_energy_tensor_normal} we get the momentum constraint:
+\begin{equation}
+    D_i K - D_j K^j{}_i =\kappa^2 J_i,
+\end{equation}
+where we use spatial indeces as the equation only involves spatial quantities. For the fluid flow is
+\begin{equation}
+    D^{(\mathbf{u})}_\alpha \Theta - D^{(\mathbf{u})}_\beta \Theta^\beta{}_\alpha + 2w_{\alpha\beta}A^\beta_{(\mathbf{u})} =\kappa^2 q_\alpha.
+    \label{eqn:momentum_equation_normal}
+\end{equation}
+ 
 
+Projecting \cref{eqn:einstein_equiv} onto the hypersurface
+\begin{equation}
+    \perp_{\mathbf{n}}R_{\mu\nu}=\kappa^2\perp_{\mathbf{n}}\left(T_{\mu\nu}-\frac{1}{2}T g_{\mu\nu}\right),
+\end{equation}
+by using \cref{eqn:ricci_spatial_proj,eqn:general_decomposition_energy_tensor_normal} we get
+\begin{equation}
+    \mathcal{L}_{\mathbf{n}}K_{\mu\nu}=\kappa^2\left(S_{\mu\nu}-\frac{1}{2}(S-E)h_{\mu\nu}\right)+N^{-1}D_\nu D_\mu N + K^\alpha{}_\nu(K_{\mu\alpha}+K_{\alpha\mu}) - KK_{\mu\nu}-\prescript{3}{}R_{\mu\nu},
+    \nonumber
+\end{equation}
+notice again the above equation only contains spatial tensor fields, and therefore we can write with spatial indices:
+\begin{equation}
+    \mathcal{L}_{\mathbf{n}}K_{ij}=\kappa^2\left(S_{ij}-\frac{1}{2}(S-E)h_{ij}\right)+N^{-1}D_j D_i N + K^k{}_j(K_{i k}+K_{k i}) - KK_{ij}-\prescript{3}{}R_{ij},
+\end{equation}
+where we use \cref{eqn:acceleration_normal} to simplify $D_jA_i+A_jA_i=N^{-1}D_j D_i N$.
 
-
-\section{Dynamical Equations}
-
-
-From another definition of the extrinsic curvature with no vorticity:
+Instead of projecting the equivalent form of the Einstein equation, let us project the Einstein equation onto the hypersurface:
+\begin{equation}
+    \perp_{\mathbf{n}}R_{\mu\nu}-\frac{3}{2}R=\kappa^2  \perp_{\mathbf{n}} T_{\mu\nu},
+\end{equation}
+where taking the trace and using \cref{eqn:ricci_spatial_proj,eqn:general_decomposition_energy_tensor_normal} yields
 \begin{align}
-    K_{ij} := \frac{1}{2} \mathcal{L}_{\mathbf{n}} h_{ij}
+    &\prescript{3}{}R+K^2- N^{-1}D^i D_i N + h^{ij}\dot{K}_{ij}-K^{ij}K_{ji}-K^{ij}K_{ij}\\
+    &\quad\quad- \frac{3}{2}\left(\prescript{3}{}R+K^2-  2N^{-1}D^i D_i N + 2\dot{K}-K_{ij}\dot{h}^{ij}-K^{ij}K_{ij}\right)=\kappa^2 S\Leftrightarrow\\
+    &\Leftrightarrow \frac{1}{2}\left(-\prescript{3}{}R-K^2+ 4N^{-1}D^i D_i N -4 \dot{K}-3K_{ij}K^{ji}\right)=\kappa^2 S.
+    \label{eqn:pressure_equation_normal}
 \end{align}
-we obtain a evolution equation for the metric $\mathbf{h}$:
-\begin{equation}
-    \frac{d h_{ij}}{dt} = 2NK_{ij}+(NV^k) \partial_k h_{ij} + h_{ik}\partial_j \beta^k + h_{kj}\partial_i \beta^k
-\end{equation}
 
-
-
-
-
-
-
-\begin{equation}
-    kE=\frac{1}{2}\left(\prescript{3}{}R+K^2+K_{ij}K^{ij}\right)
-    \label{eqn:energy_equation}
-\end{equation}
-
-\begin{equation}
-    kS=-\frac{1}{2}\prescript{3}{}R-\frac{2}{N}\frac{dK}{dt}+\frac{3}{2}K_{ij}K^{ij}-\frac{1}{2}K^2+2N^{-1}D_iD^iN
-    \label{eqn:pressure_equation}
-\end{equation}
-
+From the conservation law $\nabla_\alpha T^{\alpha\beta}=0$, projecting along the fluid flow:
+\begin{align}
+    u_\beta\nabla_\alpha T^{\alpha\beta}=0&\Leftrightarrow u_\beta\nabla_\alpha\left(\rho u^\alpha u^\beta + 2q^{(\alpha} u^{\beta)} +\pi_{\alpha\beta} + P b_{\alpha\beta}\right)=0\Leftrightarrow \nonumber\\
+    &\Leftrightarrow \frac{\Gamma}{N}\frac{D\rho}{Dt} + \Theta(\rho+P)=  - 2A^{(\mathbf{u})}_\alpha q^\alpha - D^{(\mathbf{u})}_\alpha q^\alpha -\pi^{\alpha\beta}\Sigma_{\alpha\beta}
+    \label{eqn:energy_conserv_law_fluid},
+\end{align}
+where we use the total time derivative according to the fluid flow in \cref{eqn:relation_total_time_fluid_vec}.
+And the energy conservation law according to the observer is
+\begin{align}
+    n_\beta\nabla_\alpha T^{\alpha\beta}=0&\Leftrightarrow n_\beta\nabla_\alpha\left(E n^\alpha n^\beta + 2J^{(\alpha} n^{\beta)} +S_{\alpha\beta}\right)=0\Leftrightarrow \nonumber\\
+    &\Leftrightarrow\frac{1}{N}\frac{dE}{dt} + K\left(E+\frac{S}{3}\right)=  - 2A_\alpha J^\alpha - D_\alpha J^\alpha -S_{\alpha\beta}A^{\alpha\beta}.
+    \label{eqn:energy_conserv_law_normal}
+\end{align}
 
 \section{Conformal 3+1 Formalism}
 
@@ -694,29 +750,29 @@ A conformal transformation is a mathematical operation that alters the spacetime
 
 \subsection{Introduction}
 
-A conformal transformation is given by,
+A conformal transformation is given by
 \begin{equation}
     g_{\mu\nu}\rightarrow \Tilde{g}_{\mu\nu}=\Omega^{-2}g_{\mu\nu}, \qquad g^{\mu\nu}\rightarrow \Tilde{g}^{\mu\nu}=\Omega^{2}g^{\mu\nu}
     \label{eqn:def_conf_transf}
 \end{equation}
 where $\Omega$ is some strictly positive scalar field. It is important to overstate that this transformation does not alter the basis of coordinates. 
 
-Since the conformal metric is still a valid metric, there exists a unique Levi-Civita connection $\Tilde{\nabla}$ associated with it. Therefore, given a tensor field $\mathbf{T}$ with rank $\begin{pmatrix}p\\q\end{pmatrix}$, the covariant derivatives are related by,
+Since the conformal metric is still a valid metric, there exists a unique Levi-Civita connection $\Tilde{\nabla}$ associated with it. Therefore, given a tensor field $\mathbf{T}$ with rank $\begin{pmatrix}p\\q\end{pmatrix}$, the covariant derivatives are related by
 \begin{equation}
     \nabla_\mu T^{\alpha_1\cdots \alpha_p}{}_{\beta_1\cdots\beta_q}=\Tilde{\nabla}_\mu T^{\alpha_1\cdots \alpha_p}{}_{\beta_1\cdots\beta_q} - \sum_{r=1}^p C^{\alpha_r}{}_{\mu\lambda}T^{\alpha_1\cdots \lambda \cdots \alpha_p}{}_{\beta_1\cdots\beta_q} + \sum_{r=1}^q C^{\lambda}{}_{\mu \alpha_r}T^{\alpha_1 \cdots \alpha_p}{}_{\beta_1\cdots \lambda\cdots\beta_q},
     \label{eqn:spacetime_cov_derivatives}
 \end{equation}
-where,
+where we have that
 \begin{equation}
     C^\lambda{}_{\mu\nu}:=\Tilde{\Gamma}^\lambda{}_{\mu\nu}-\Gamma^\lambda{}_{\mu\nu},
 \end{equation}
-where $\Tilde{\Gamma}^\lambda{}_{\mu\nu}$ is the Christoffel symbol associated with $\Tilde{\nabla}$. We can further simplify $C^\lambda{}_{\mu\nu}$, by converting the Christoffel symbol of the connection $\nabla$ with the conformal transformation, after some computations we obtain,
+where $\Tilde{\Gamma}^\lambda{}_{\mu\nu}$ is the Christoffel symbol associated with $\Tilde{\nabla}$. We can further simplify $C^\lambda{}_{\mu\nu}$, by converting the Christoffel symbol of the connection $\nabla$ with the conformal transformation, after some computations we obtain
 \begin{equation}
     C^\lambda{}_{\mu\nu}=-\left(\delta^\lambda_\mu \Tilde{\nabla}_\nu + \delta^\lambda_\nu \Tilde{\nabla}_\mu - \Tilde{g}_{\mu\nu}\Tilde{\nabla}^\lambda\right)\ln\Omega.
     \label{eqn:dif_christ_C}
 \end{equation}
 
-Having determined the relation between the covariant derivatives, it is time to check the relation between the Ricci scalars. We can start with the Ricci identity,
+Having determined the relation between the covariant derivatives, it is time to check the relation between the Ricci scalars. We can start with the Ricci identity:
 \begin{equation}
     \left[\nabla_\mu,\nabla_\nu\right]X^\lambda=R^\lambda{}_{\rho\mu\nu}X^{\rho}.
 \end{equation}
@@ -731,36 +787,36 @@ Having determined the relation between the covariant derivatives, it is time to 
 
 \subsection{Kinematical quantities}
 
-In the 3+1 formalism, we saw we could decompose the spacetime metric $g_{\mu\nu}$ into an induced hypersurface metric $h_{\mu\nu}$. With the conformal transformation we obtain,
+In the 3+1 formalism, we saw we could decompose the spacetime metric $g_{\mu\nu}$ into an induced hypersurface metric $h_{\mu\nu}$. With the conformal transformation we obtain
 \begin{equation}
     \Tilde{g}_{\mu\nu}=\Omega^{-2}h_{\mu\nu}-\Omega^{-1}n_\mu\Omega^{-1}n_\nu=\Tilde{h}_{\mu\nu}-\Tilde{n}_\mu\Tilde{n}_\nu,
     \label{eqn:conf_metric_decomp}
 \end{equation}
-where the conformal induced hypersurface metric and the conformal normal vector are, respectively,
+where the conformal induced hypersurface metric and the conformal normal vector are, respectively
 \begin{equation}
     \Tilde{h}_{\mu\nu}=\Omega^{-2}h_{\mu\nu}, \qquad \Tilde{n}_\mu=\Omega^{-1}n_\mu.
     \label{eqn:conf_spatial_metric_and_conf_normal_vec}
 \end{equation}
-From Eq.(\ref{eqn:conf_spatial_metric_and_conf_normal_vec}) and Eq.(\ref{eqn:def_conf_transf}), the covector of the normal vector can be obtain by,
+From Eq.(\ref{eqn:conf_spatial_metric_and_conf_normal_vec}) and Eq.(\ref{eqn:def_conf_transf}), the covector of the normal vector can be obtain by
 \begin{equation}
     n^\mu = g^{\mu\nu} n_\nu = \Omega^{-2} \Tilde{g}^{\mu\nu} \Omega \Tilde{n}_\nu = \Omega^{-1}\Tilde{n}^\mu,
 \end{equation}
 here one should remember the presence of a metric in upper raised indices, and therefore a difference to its lower raised counterpart.
 
-The fluid vector $u_\mu$, transforms in the same way as the normal vector,
+The fluid vector $u_\mu$, transforms in the same way as the normal vector
 \begin{equation}
     \Tilde{u}_\mu = \Omega^{-1}u_\mu, \qquad \Tilde{u}^\mu=\Omega u^\mu, 
 \end{equation}
-and therefore,
+and therefore
 \begin{equation}
     \Tilde{u}^\mu = \Omega u^\mu = \Omega \Gamma \left(n^\mu+\frac{1}{N}(\beta^\mu+v^\mu)\right) = \Gamma \left(\Tilde{n}^\mu+\frac{1}{\Tilde{N}}(\beta^\mu+v^\mu)\right)
 \end{equation}
-where the lapse function is transformed as $N\rightarrow \Tilde{N}=\Omega^{-1}N$, and the shift covector remains unchanged as well as the fluid coordinate velocity $v^\mu$. However, as mentioned, their contravectors are dependent on the transformation as,
+where the lapse function is transformed as $N\rightarrow \Tilde{N}=\Omega^{-1}N$, and the shift covector remains unchanged as well as the fluid coordinate velocity $v^\mu$. However, as mentioned, their contravectors are dependent on the transformation as
 \begin{equation}
     \Tilde{v}_\mu=\Omega^2 v_\mu, \qquad \Tilde{\beta}_\mu = \Omega^2 \beta_\mu.
 \end{equation}
 
-The acceleration of the normal vector is equal to,
+The acceleration of the normal vector is equal to
 \begin{align}
     A_\mu &= n^\nu \nabla_\nu n_\mu =\nonumber\\
     \text{Eq.(\ref{eqn:spacetime_cov_derivatives})}\rightarrow \quad &= n^\nu \left[\Tilde{\nabla}_\nu + C^\lambda{}_{\nu\mu}n_\lambda\right]=\nonumber\\
@@ -769,31 +825,31 @@ The acceleration of the normal vector is equal to,
     \text{Eq.(\ref{eqn:conf_metric_decomp})}\rightarrow \quad &= \Tilde{A}_\mu + \Tilde{D}_\mu \ln\Omega,
     \label{eqn:conf_acceleration}
 \end{align}
-where the conformal acceleration is,
+where the conformal acceleration is
 \begin{equation}
     \Tilde{A}_\mu = \Tilde{n}^\nu \Tilde{\nabla}_\nu \Tilde{n}_\mu,
 \end{equation}
-and where $\Tilde{D}$ is the conformal spatial connection, and is defined as,
+and where $\Tilde{D}$ is the conformal spatial connection, and is defined as
 \begin{equation}
     \Tilde{D}_\mu T^{\alpha_1\cdots \alpha_p}{}_{\beta_1\cdots\beta_q} := \Tilde{h}^{\alpha_1}_{\gamma_1}\cdots \Tilde{h}^{\alpha_p}_{\gamma_p} \Tilde{h}^{\delta_1}_{\beta_1}\cdots\Tilde{h}^{\delta_q}_{\beta_q}\Tilde{h}^{\lambda}_{\mu}\Tilde{\nabla}_\lambda T^{\gamma_1\cdots \gamma_p}{}_{\delta_1\cdots\delta_q},
     \label{eqn:conf_spatial_der}
 \end{equation}
 Like before, according to the Frobenius Theorem, $\Tilde{D}$ is only a proper three-dimensional covariant derivative if the vector $\Tilde{n}_\mu$ has no "vorticity", i.e. $\Tilde{D}_{[\nu} \Tilde{n}_{\mu]}=0$. Therefore, now it is a good opportunity to determine the conformal extrinsic curvature.
 
-As mentioned before, when "vorticity" is not present in the hypersurface, a useful definition for the conformal extrinsic curvature is,
+As mentioned before, when "vorticity" is not present in the hypersurface, a useful definition for the conformal extrinsic curvature is
 \begin{equation}
     \Tilde{K}_{\mu\nu}:=\frac{1}{2}\mathcal{L}_{\Tilde{n}} \Tilde{h}_{\mu\nu},
 \end{equation}
-with this we can compute the relation between the usual and conformal extrinsic curvature as,
+with this we can compute the relation between the usual and conformal extrinsic curvature as
 \begin{equation}
     K_{\mu\nu}=\Omega\Tilde{K}_{\mu\nu}+\Tilde{h}_{\mu\nu}\mathcal{L}_{\Tilde{n}}\Omega, \qquad \Tilde{K}_{\mu\nu}=\Omega^{-1}K_{\mu\nu}-\Omega^{-2}h_{\mu\nu}\mathcal{L}_n\Omega.
 \end{equation}
 
-Decomposing the conformal extrinsic curvature in the following way,
+Decomposing the conformal extrinsic curvature in the following way
 \begin{equation}
     \Tilde{K}_{\mu\nu}=\frac{1}{3}\Tilde{K}\Tilde{h}_{\mu\nu}+\Tilde{A}_{\mu\nu}
 \end{equation}
-where $\Tilde{A}_{\mu\nu}$ is the traceless part and $\Tilde{K}$ is the trace of the conformal extrinsic curvature, we can see that they relate to their usual counterparts as,
+where $\Tilde{A}_{\mu\nu}$ is the traceless part and $\Tilde{K}$ is the trace of the conformal extrinsic curvature, we can see that they relate to their usual counterparts as
 \begin{equation}
     \Tilde{K}=\Omega K-3\mathcal{L}_n\Omega, \qquad \Tilde{A}_{\mu\nu}=\Omega^{-1}A_{\mu\nu}.
 \end{equation}

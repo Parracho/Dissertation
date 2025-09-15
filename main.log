@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.8)  14 SEP 2025 16:43
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.8)  15 SEP 2025 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1423,7 +1423,7 @@ Overfull \hbox (6.08987pt too wide) detected at line 28
 
 
 Overfull \hbox (6.08987pt too wide) detected at line 29
- \TU/Arial(0)/m/n/10.95 8
+ \TU/Arial(0)/m/n/10.95 9
  []
 
 
@@ -1443,102 +1443,97 @@ Overfull \hbox (12.17973pt too wide) detected at line 32
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 33
- \TU/Arial(0)/m/n/10.95 12
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 34
- \TU/Arial(0)/m/n/10.95 13
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 35
- \TU/Arial(0)/m/n/10.95 13
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 36
  \TU/Arial(0)/m/n/10.95 14
  []
 
 
+Overfull \hbox (12.17973pt too wide) detected at line 34
+ \TU/Arial(0)/m/n/10.95 14
+ []
+
+
+Overfull \hbox (12.17973pt too wide) detected at line 35
+ \TU/Arial(0)/m/n/10.95 15
+ []
+
+
+Overfull \hbox (12.17973pt too wide) detected at line 36
+ \TU/Arial(0)/m/n/10.95 18
+ []
+
+
 Overfull \hbox (12.17973pt too wide) detected at line 37
- \TU/Arial(0)/m/n/10.95 16
+ \TU/Arial(0)/m/n/10.95 18
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 38
- \TU/Arial(0)/m/n/10.95 16
+ \TU/Arial(0)/m/n/10.95 20
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 39
- \TU/Arial(0)/m/n/10.95 18
+ \TU/Arial(0)/m/n/10.95 20
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 40
- \TU/Arial(0)/m/n/10.95 18
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 41
- \TU/Arial(0)/m/n/10.95 21
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 42
- \TU/Arial(0)/m/n/10.95 21
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 43
- \TU/Arial(0)/m/n/10.95 21
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 44
  \TU/Arial(0)/m/n/10.95 23
  []
 
 
-Overfull \hbox (12.17973pt too wide) detected at line 45
+Overfull \hbox (12.17973pt too wide) detected at line 41
+ \TU/Arial(0)/m/n/10.95 23
+ []
+
+
+Overfull \hbox (12.17973pt too wide) detected at line 42
+ \TU/Arial(0)/m/n/10.95 23
+ []
+
+
+Overfull \hbox (12.17973pt too wide) detected at line 43
  \TU/Arial(0)/m/n/10.95 25
  []
 
 
+Overfull \hbox (12.17973pt too wide) detected at line 44
+ \TU/Arial(0)/m/n/10.95 28
+ []
+
+
+Overfull \hbox (12.17973pt too wide) detected at line 45
+ \TU/Arial(0)/m/n/10.95 29
+ []
+
+
 Overfull \hbox (12.17973pt too wide) detected at line 46
- \TU/Arial(0)/m/n/10.95 26
+ \TU/Arial(0)/m/n/10.95 30
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 47
- \TU/Arial(0)/m/n/10.95 27
+ \TU/Arial(0)/m/n/10.95 30
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 48
- \TU/Arial(0)/m/n/10.95 27
+ \TU/Arial(0)/m/n/10.95 30
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 49
- \TU/Arial(0)/m/n/10.95 27
+ \TU/Arial(0)/m/n/10.95 32
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 50
- \TU/Arial(0)/m/n/10.95 29
+ \TU/Arial(0)/m/n/10.95 32
  []
 
 
 Overfull \hbox (12.17973pt too wide) detected at line 51
- \TU/Arial(0)/m/n/10.95 29
- []
-
-
-Overfull \hbox (12.17973pt too wide) detected at line 52
- \TU/Arial(0)/m/n/10.95 31
+ \TU/Arial(0)/m/n/10.95 33
  []
 
 
@@ -1554,13 +1549,13 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 
 ]
-Overfull \hbox (12.17973pt too wide) detected at line 54
- \TU/Arial(0)/m/n/10.95 31
+Overfull \hbox (12.17973pt too wide) detected at line 53
+ \TU/Arial(0)/m/n/10.95 33
  []
 
 
-Overfull \hbox (12.17973pt too wide) detected at line 55
- \TU/Arial(0)/m/n/10.95 34
+Overfull \hbox (12.17973pt too wide) detected at line 54
+ \TU/Arial(0)/m/n/10.95 36
  []
 
 )
@@ -1727,10 +1722,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [8]
 
-LaTeX Warning: Reference `app:frobenius' on page 1 undefined on input line 536.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 18.99997pt, for example:
@@ -1739,6 +1730,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [9]
+
+LaTeX Warning: Reference `app:frobenius' on page 1 undefined on input line 541.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1749,27 +1744,19 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [10]
 
-LaTeX Warning: Reference `app:ricci' on page 1 undefined on input line 583.
+LaTeX Warning: Reference `app:ricci' on page 1 undefined on input line 589.
 
 
-LaTeX Warning: Reference `app:codazzi' on page 1 undefined on input line 583.
-
-
-LaTeX Warning: Reference `app:gauss' on page 1 undefined on input line 583.
+LaTeX Warning: Reference `app:codazzi' on page 1 undefined on input line 589.
 
 
 LaTeX Warning: Reference `app:gauss' on page 1 undefined on input line 589.
 
 
-LaTeX Warning: Reference `app:ricci' on page 1 undefined on input line 599.
+LaTeX Warning: Reference `app:codazzi' on page 1 undefined on input line 595.
 
 
-Overfull \hbox (1.55246pt too wide) detected at line 603
-[]
- []
-
-
-LaTeX Warning: Reference `app:ricci' on page 1 undefined on input line 613.
+LaTeX Warning: Reference `app:gauss' on page 1 undefined on input line 606.
 
 
 
@@ -1781,6 +1768,21 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [11]
+
+LaTeX Warning: Reference `app:ricci' on page 1 undefined on input line 616.
+
+
+Overfull \hbox (1.55246pt too wide) detected at line 620
+[]
+ []
+
+
+LaTeX Warning: Reference `app:ricci' on page 1 undefined on input line 630.
+
+
+LaTeX Warning: Reference `app:formalism' on page 1 undefined on input line 655.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1807,7 +1809,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[14]) (./Chapters/LCA.tex
+[14]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1817,6 +1819,24 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [15]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[16]) (./Chapters/LCA.tex
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[17]
 Chapter 3.
 File: Figures/domain_transportation.png Graphic file (type bmp)
 <Figures/domain_transportation.png>
@@ -1829,11 +1849,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[16
+[18
 
 ]
 
-LaTeX Warning: Reference `eqn:metric_evolution_basis' on page 17 undefined on input line 63.
+LaTeX Warning: Reference `eqn:metric_evolution_basis' on page 19 undefined on input line 64.
 
 
 
@@ -1844,25 +1864,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[17]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 18.99997pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.99997pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
-
-[18]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 18.99997pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.99997pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
-
-[19]) (./Chapters/Brans-Dicke.tex
+[19]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1872,6 +1874,24 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [20]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[21]) (./Chapters/Brans-Dicke.tex
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[22]
 Chapter 4.
 
 
@@ -1882,7 +1902,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[21
+[23
 
 ]
 Overfull \hbox (27.05934pt too wide) detected at line 66
@@ -1898,7 +1918,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[22]
+[24]
 Overfull \hbox (4.16248pt too wide) detected at line 80
 []
  []
@@ -1912,7 +1932,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[23]
+[25]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1921,8 +1941,22 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[24]
-Overfull \hbox (3.5106pt too wide) in paragraph at lines 181--182
+[26]
+Overfull \hbox (24.3053pt too wide) detected at line 179
+[]
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[27]
+Overfull \hbox (3.5106pt too wide) in paragraph at lines 218--219
 []\TU/Arial(0)/m/n/10.95 Under the variational principle, the variation w.r.t the metric, will be the same as in eq. ([][]A.28[][])
  []
 
@@ -1935,38 +1969,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[25]) (./Chapters/Backreaction.tex
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 18.99997pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.99997pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
-
-[26]
-Chapter 5.
-
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 18.99997pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.99997pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
-
-[27
-
-]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 18.99997pt, for example:
-(fancyhdr)                \setlength{\headheight}{18.99997pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
-
-[28]
+[28]) (./Chapters/Backreaction.tex
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1976,9 +1979,15 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [29]
-Overfull \hbox (1.09995pt too wide) in paragraph at lines 164--166
-\TU/Arial(0)/m/n/10.95 where the effective energy density and pressure are given by the same form as in eqs. ([][]5.9[][])
- []
+Chapter 5.
+
+LaTeX Warning: Reference `eqn:energy_equation' on page 1 undefined on input line 27.
+
+
+LaTeX Warning: Reference `eqn:pressure_equation' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Reference `eqn:energy_equation' on page 1 undefined on input line 37.
 
 
 
@@ -1989,11 +1998,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[30]) (./main.bbl (./main.brf)
-\tf@brf=\write12
-\openout12 = `main.brf'.
+[30
 
-
+]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -2011,9 +2018,16 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[32
+[32]
+Overfull \hbox (1.09995pt too wide) in paragraph at lines 164--166
+\TU/Arial(0)/m/n/10.95 where the effective energy density and pressure are given by the same form as in eqs. ([][]5.9[][])
+ []
 
-]) (./Appendices/Variational.tex
+) (./main.bbl (./main.brf)
+\tf@brf=\write12
+\openout12 = `main.brf'.
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -2023,11 +2037,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [33]
-Appendix A.
-
-LaTeX Warning: Reference `' on page 34 undefined on input line 10.
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -2038,7 +2047,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [34
 
-]
+]) (./Appendices/Variational.tex
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -2048,6 +2057,31 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
 [35]
+Appendix A.
+
+LaTeX Warning: Reference `' on page 36 undefined on input line 10.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[36
+
+]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 18.99997pt, for example:
+(fancyhdr)                \setlength{\headheight}{18.99997pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
+
+[37]
 Overfull \hbox (15.98483pt too wide) detected at line 105
 []
  []
@@ -2061,7 +2095,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[36])
+[38])
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -2070,7 +2104,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-4.99997pt}.
 
-[37] (./main.aux)
+[39] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2083,17 +2117,17 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 25A1BE263D3E1B69D1E8CEB8E4CFC2E4;7387.
+(rerunfilecheck)             Checksum: DA6E8924BA0112ED59C5A6DDA4AFFA31;7084.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 9E550C1C37B7694CAFDEF1B868FE9356;751.
+(rerunfilecheck)             Checksum: 962F6A204A800BAFB3A88C4A00358606;809.
  ) 
 Here is how much of TeX's memory you used:
- 45481 strings out of 473840
- 944510 string characters out of 5733402
- 1428032 words of memory out of 5000000
- 67689 multiletter control sequences out of 15000+600000
+ 45504 strings out of 473840
+ 945169 string characters out of 5733402
+ 1430275 words of memory out of 5000000
+ 67712 multiletter control sequences out of 15000+600000
  622606 words of font info for 133 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
  100i,19n,115p,2427b,1224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (44 pages, 770896 bytes).
+Output written on main.xdv (46 pages, 799924 bytes).
