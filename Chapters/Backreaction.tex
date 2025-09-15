@@ -10,10 +10,10 @@ The scale factor is given by
     \frac{a_\Sigma}{a_{\Sigma_0}}:=\left(\frac{V_\Sigma}{V_{\Sigma_0}}\right)^{1/3}.
 \end{equation}
 
-The effective Hubble expansion is thus defined as
+The effective Hubble expansion w.r.t the normal frame is thus defined as
 \begin{equation}
     H_{\Sigma} := \frac{1}{a_{\Sigma}}\frac{da_{\Sigma}}{dt}\equiv \frac{1}{3V_{\Sigma}}\frac{dV_{\Sigma}}{dt}\equiv\frac{1}{3}\left\langle NK \right\rangle_{\Sigma}.
-    \label{eqn:def_scale_factor}
+    \label{eqn:def_scale_factor_normal}
 \end{equation}
 
 
@@ -53,7 +53,7 @@ in order to sum on the \cref{eqn:ray_1_normal}, we obtain
 The averaged Friedman and Raychaudhuri equations as
 \begin{align}
     &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=8\pi\left\langle N^2E\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_1}\\
-    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-\frac{8\pi}{2}\left\langle N^2(E+S)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}\label{eqn:raychaud_eqs_jf_1}
+    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-4\pi\left\langle N^2(E+S)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}\label{eqn:raychaud_eqs_jf_1}
 \end{align}
 where the kinematical and dynamical backreactions are defined as
 \begin{align}
@@ -76,18 +76,24 @@ where we introduce a new kind of backreaction, the stress energy backreaction $\
 \end{equation}
 where $u_{(a)}^\mu$ is the four-velocity of the corresponding species $(a)$.
 
+Due to the possible presence of multiple fluid flows, as in the JBD theory, each with their own four-velocity $\mathbf{u}_{(a)}$, and subsequently time derivative. 
 
+With the new backreaction we get
+\begin{align}
+    &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=8\pi\left\langle N^2\rho\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\mathcal{T}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_2}\\
+    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-4\pi\left\langle N^2(\rho+3P)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}+\frac{1}{2}\mathcal{T}_{\Sigma}\label{eqn:raychaud_eqs_jf_2},
+\end{align}
+where the sum on the species is implicit.
 
-
-
-A necessary condition for \cref{eqn:friedman_eqs_jf_1} to yield \cref{eqn:raychaud_eqs_jf_1} is the integrability condition given by \cite{Buchert_2020}
+A necessary condition for \cref{eqn:friedman_eqs_jf_2} to yield \cref{eqn:raychaud_eqs_jf_2} is the integrability condition given by \cite{Buchert_2020},
 \begin{align}
 \begin{gathered}
 \frac{1}{a_\Sigma^6}\left[\frac{d}{d t}\left(a_\Sigma^6\mathcal{Q}_{\Sigma}\right)+a_\Sigma^4\frac{d}{dt}\left(a_\Sigma^2\mathcal{R}_{\Sigma}\right)+a_\Sigma^2\frac{d}{dt}\left(a_\Sigma^4 \mathcal{T}_{\Sigma}\right)+4a_\Sigma^5\frac{da_\Sigma}{dt}\mathcal{P}_{\Sigma}\right]=\nonumber \\
 =2k\left(\frac{d}{d t}\left\langle N^2 \rho\right\rangle_{\Sigma}+\frac{3}{a_{\Sigma}} \frac{d a_{\Sigma}}{d t}\left\langle N^2(\rho+P)\right\rangle_{\Sigma}\right),
 \end{gathered}
 \end{align}
-where the LHS are the various backreactions and in the RHS is an "averaged" continuity equation. To prove this, take the continuity equation in (cref), by multiplying $\times N^3$ and taking its average we get
+where the LHS are the various backreactions and in the RHS is an "averaged" continuity equation. 
+To prove this, take the continuity equation in \cref{conse}, by multiplying $\times N^3$ and taking its average we get
 \begin{align}
     \left\langle N^2\frac{d E}{dt}\right\rangle + \left\langle N\Theta N^2(E+S)\right\rangle =  -\left\langle N^3\left( 2 A_\alpha J^\alpha +  D_\alpha J^\alpha+ S^{\alpha\beta}A_{\alpha\beta}\right)\right\rangle,
 \end{align}

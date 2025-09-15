@@ -573,6 +573,7 @@ In the fluid's perspective the extrinsic curvature is
     \Theta_{\alpha\beta}:=D^{(\mathbf{u})}_\beta u_\alpha=\frac{1}{3}\Theta b_{\alpha\beta} + \sigma_{\alpha\beta} + w_{\alpha\beta},
 \end{equation}
 where $\Theta$, $\sigma_{\alpha\beta}$ and $w_{\alpha\beta}$ are the rate of expansion, shear and vorticity of the fluid.
+This extrinsic curvature will now measure a tilted bending relative to $K_{\alpha\beta}$, because $\Sigma$ is not the fluid's hypersurface.
 
 From the spatial connection introduced, we also obtain a new type of curvature, the intrinsic curvature $\prescript{3}{}{\mathbf{R}}$.
 The intrinsic curvature measures the non-commutativity between two consecutive three-covariant derivates $\mathbf{D}$, by the Ricci identity:
@@ -679,14 +680,14 @@ Projecting the \cref{eqn:einstein_formalism} along the normal vector in
 \end{equation}
 by using \cref{eqn:ricci_time_proj,eqn:ricci_scalar_decomp,eqn:general_decomposition_energy_tensor_normal}, we obtain the energy equation or called Hamiltonian constraint \cite{Gourgoulhon:2012ffd}:
 \begin{equation}
-    \frac{1}{2}\left(\prescript{3}{}R+K^2-K_{\mu\nu}K^{\mu\nu}\right)=\kappa^2 E,
+    \frac{1}{2}\left(\prescript{3}{}R+K^2-K_{\mu\nu}K^{\mu\nu}\right)=\kappa^2 E.
     \label{eqn:energy_equation_normal}
 \end{equation}
-the equivalent equation for the fluid flow is
-\begin{equation}
-    \frac{1}{2}\left(\prescript{3}{}R_{(\mathbf{u})}+\Theta^2-\Theta_{\mu\nu}\Theta^{\nu\mu}\right)=\kappa^2\rho,
-\end{equation}
-where we stress the order of the indices in the last term inside the curved brackets.
+%the equivalent equation for the fluid flow is
+%\begin{equation}
+%    \frac{1}{2}\left(\prescript{3}{}R_{(\mathbf{u})}+\Theta^2-\Theta_{\mu\nu}\Theta^{\nu\mu}\right)=\kappa^2\rho,
+%\end{equation}
+%where we stress the order of the indices in the last term inside the curved brackets.
 
 Projecting \cref{eqn:einstein_formalism} along the normal vector and the hypersurface:
 \begin{equation}
@@ -694,13 +695,13 @@ Projecting \cref{eqn:einstein_formalism} along the normal vector and the hypersu
 \end{equation}
 by using \cref{eqn:ricci_extradig_proj,eqn:general_decomposition_energy_tensor_normal} we get the momentum constraint:
 \begin{equation}
-    D_i K - D_j K^j{}_i =\kappa^2 J_i,
+    D_i K - D_j K^j{}_i =\kappa^2 J_i.
 \end{equation}
-where we use spatial indeces as the equation only involves spatial quantities. For the fluid flow is
-\begin{equation}
-    D^{(\mathbf{u})}_\alpha \Theta - D^{(\mathbf{u})}_\beta \Theta^\beta{}_\alpha + 2w_{\alpha\beta}A^\beta_{(\mathbf{u})} =\kappa^2 q_\alpha.
-    \label{eqn:momentum_equation_normal}
-\end{equation}
+%where we use spatial indeces as the equation only involves spatial quantities. For the fluid flow is
+%\begin{equation}
+%    D^{(\mathbf{u})}_\alpha \Theta - D^{(\mathbf{u})}_\beta \Theta^\beta{}_\alpha + 2w_{\alpha\beta}A^\beta_{(\mathbf{u})} =\kappa^2 q_\alpha.
+%    \label{eqn:momentum_equation_normal}
+%\end{equation}
  
 
 Projecting \cref{eqn:einstein_equiv} onto the hypersurface
@@ -733,7 +734,7 @@ where taking the trace and using \cref{eqn:ricci_spatial_proj,eqn:general_decomp
 From the conservation law $\nabla_\alpha T^{\alpha\beta}=0$, projecting along the fluid flow:
 \begin{align}
     u_\beta\nabla_\alpha T^{\alpha\beta}=0&\Leftrightarrow u_\beta\nabla_\alpha\left(\rho u^\alpha u^\beta + 2q^{(\alpha} u^{\beta)} +\pi_{\alpha\beta} + P b_{\alpha\beta}\right)=0\Leftrightarrow \nonumber\\
-    &\Leftrightarrow \frac{\Gamma}{N}\frac{D\rho}{Dt} + \Theta(\rho+P)=  - 2A^{(\mathbf{u})}_\alpha q^\alpha - D^{(\mathbf{u})}_\alpha q^\alpha -\pi^{\alpha\beta}\Sigma_{\alpha\beta}
+    &\Leftrightarrow \frac{\Gamma}{N}\frac{D\rho}{Dt} + \Theta(\rho+P)=  - A^{(\mathbf{u})}_\alpha q^\alpha - \nabla_\alpha q^\alpha -\pi^{\alpha\beta}\Sigma_{\alpha\beta}
     \label{eqn:energy_conserv_law_fluid},
 \end{align}
 where we use the total time derivative according to the fluid flow in \cref{eqn:relation_total_time_fluid_vec}.
