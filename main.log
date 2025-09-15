@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.11)  15 SEP 2025 18:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.11)  15 SEP 2025 18:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1927,7 +1927,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [31]
 
-LaTeX Warning: Reference `eqn:def_scale_factor' on page 1 undefined on input line 99.
+LaTeX Warning: Reference `conse' on page 1 undefined on input line 96.
+
+
+LaTeX Warning: Reference `eqn:def_scale_factor' on page 1 undefined on input line 100.
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1938,10 +1941,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [32]
 
-LaTeX Warning: Reference `eqn:S_eff_1' on page 1 undefined on input line 159.
+LaTeX Warning: Reference `eqn:S_eff_1' on page 1 undefined on input line 160.
 
 
-LaTeX Warning: Reference `eqn:E_eff_1' on page 1 undefined on input line 159.
+LaTeX Warning: Reference `eqn:E_eff_1' on page 1 undefined on input line 160.
 
 ) (./main.bbl (./main.brf)
 \tf@brf=\write12
@@ -2033,12 +2036,12 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: B0B1D2192E12BFFE8CFDF036A99D9AE9;766.
  ) 
 Here is how much of TeX's memory you used:
- 45210 strings out of 476744
- 936611 string characters out of 5800616
+ 45211 strings out of 476744
+ 936623 string characters out of 5800616
  1942164 words of memory out of 5000000
- 66250 multiletter control sequences out of 15000+600000
+ 66251 multiletter control sequences out of 15000+600000
  621838 words of font info for 133 fonts, out of 8000000 for 9000
  67 hyphenation exceptions out of 8191
  100i,19n,96p,2400b,1106s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (46 pages, 799028 bytes).
+Output written on main.xdv (46 pages, 799004 bytes).
