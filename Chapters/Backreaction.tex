@@ -10,6 +10,12 @@ The scale factor is given by
     \frac{a_\Sigma}{a_{\Sigma_0}}:=\left(\frac{V_\Sigma}{V_{\Sigma_0}}\right)^{1/3}.
 \end{equation}
 
+
+\subsubsection{According to the Normal Frame, $d/dt$}
+
+In this section we will derive the equations necessary to build the Friedmann equations according to the observer's scale factor.
+This frame is useful when doing an observational treatment \cite{Gasperini_2010}.
+
 The effective Hubble expansion w.r.t the normal frame is thus defined as
 \begin{equation}
     H_{\Sigma} := \frac{1}{a_{\Sigma}}\frac{da_{\Sigma}}{dt}\equiv \frac{1}{3V_{\Sigma}}\frac{dV_{\Sigma}}{dt}\equiv\frac{1}{3}\left\langle NK \right\rangle_{\Sigma}.
@@ -17,21 +23,20 @@ The effective Hubble expansion w.r.t the normal frame is thus defined as
 \end{equation}
 
 
-
 The objective now is to obtain a Friedmannian equation, we can do this by taking the energy equation in \cref{eqn:energy_equation_normal}, multiplying by $N^2$ and taking the average:
 \begin{equation}
-    k\langle N^2E\rangle=\frac{1}{2}\langle N^2\prescript{3}{}{R}\rangle+\frac{1}{2}\langle N^2(K^2+K_{ij}K^{ij})\rangle,
+    k\langle N^2E\rangle=\frac{1}{2}\langle N^2\prescript{3}{}{R}\rangle+\frac{1}{2}\langle N^2(K^2-K_{ij}K^{ij})\rangle,
 \end{equation}
 from here by summing $3\left(\frac{1}{a}\frac{da}{dt}\right)^2$ on the RHS and $\frac{1}{3}\langle NK\rangle^2$ on the LHS, as they are the same, the equation still stands, and after rearranging we get the following equation:
 \begin{equation}
-    3\left(\frac{1}{a}\frac{da}{dt}\right)^2=k\langle N^2E\rangle-\frac{1}{2}\langle N^2\prescript{3}{}{R}\rangle-\frac{1}{2}\left[\left\langle N^2(K^2+K_{ij}K^{ij})\right\rangle-\frac{2}{3}\langle NK\rangle^2\right].
+    3\left(\frac{1}{a}\frac{da}{dt}\right)^2=k\langle N^2E\rangle-\frac{1}{2}\langle N^2\prescript{3}{}{R}\rangle-\frac{1}{2}\left[\left\langle N^2(K^2-K_{ij}K^{ij})\right\rangle-\frac{2}{3}\langle NK\rangle^2\right].
 \end{equation}
 
 
 
 Now for the Raychaudhuri equation, by summing the \cref{eqn:energy_equation_normal,eqn:pressure_equation_normal}, multiplying by $N^2$ and taking the average:
 \begin{equation}
-    \frac{k}{2}\langle N^2(E+S)\rangle_\Sigma=-\left\langle N\frac{dK}{dt}\right\rangle_\Sigma+\langle N^2K_{ij}K^{ij}\rangle_\Sigma+\langle ND_iD^iN\rangle_\Sigma,
+    \frac{k}{2}\langle N^2(E+S)\rangle_\Sigma=-\left\langle N\frac{dK}{dt}\right\rangle_\Sigma-\langle N^2K_{ij}K^{ij}\rangle_\Sigma+\langle ND_iD^iN\rangle_\Sigma,
     \label{eqn:ray_1_normal}
 \end{equation}
 from here by determining
@@ -43,29 +48,65 @@ from here by determining
 \end{align}
 in order to sum on the \cref{eqn:ray_1_normal}, we obtain
 \begin{equation}
-    3\frac{1}{a}\frac{d^2a}{dt^2}=-\frac{k}{2}\langle N^2(E+S)\rangle_\Sigma+\left\langle N^2(K^2+K_{ij}K^{ij})\right\rangle_{\Sigma}-\frac{2}{3}\langle NK\rangle^2_\Sigma+\left\langle ND_iD^i N+K\frac{dN}{dt}\right\rangle.\nonumber
+    3\frac{1}{a}\frac{d^2a}{dt^2}=-\frac{k}{2}\langle N^2(E+S)\rangle_\Sigma+\left\langle N^2(K^2-K_{ij}K^{ij})\right\rangle_{\Sigma}-\frac{2}{3}\langle NK\rangle^2_\Sigma+\left\langle ND_iD^i N+K\frac{dN}{dt}\right\rangle.\nonumber
 \end{equation}
-
-
-
-
 
 The averaged Friedman and Raychaudhuri equations as
 \begin{align}
-    &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=8\pi\left\langle N^2E\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_1}\\
-    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-4\pi\left\langle N^2(E+S)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}\label{eqn:raychaud_eqs_jf_1}
+    &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=8\pi\left\langle N^2E\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_1_normal}\\
+    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-4\pi\left\langle N^2(E+S)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}\label{eqn:raychaud_eqs_jf_1_normal}
 \end{align}
 where the kinematical and dynamical backreactions are defined as
 \begin{align}
     \mathcal{R}_\Sigma :=&\left\langle N^2 \prescript{(3)}{}{R}\right\rangle_{\Sigma}\\
-    \mathcal{Q}_{\Sigma}:=& \left\langle N^2\left(K^2+K_{ij}K^{ij}\right)\right\rangle_{\Sigma}-\frac{2}{3}\left\langle NK\right\rangle_{\Sigma}^2, \\
+    \mathcal{Q}_{\Sigma}:=& \left\langle N^2\left(K^2-K_{ij}K^{ij}\right)\right\rangle_{\Sigma}-\frac{2}{3}\left\langle NK\right\rangle_{\Sigma}^2, \\
     \mathcal{P}_{\Sigma}:= &\left\langle N D_i D^i N+K\frac{dN}{dt}\right\rangle_{\Sigma}.
 \end{align}
 
 
+A necessary condition for \cref{eqn:friedman_eqs_jf_1_normal} to yield \cref{eqn:raychaud_eqs_jf_1_normal} is the integrability condition given by \cite{Buchert_2020},
+\begin{align}
+&\frac{1}{a_\Sigma^6}\left[\frac{d}{d t}\left(a_\Sigma^6\mathcal{Q}_{\Sigma}\right)+a_\Sigma^4\frac{d}{dt}\left(a_\Sigma^2\mathcal{R}_{\Sigma}\right)+4a_\Sigma^5\frac{da_\Sigma}{dt}\mathcal{P}_{\Sigma}\right]=\nonumber \\
+&\qquad\qquad\qquad =2k\left(\frac{d}{d t}\left\langle N^2 E\right\rangle_{\Sigma}+\frac{3}{a_{\Sigma}} \frac{d a_{\Sigma}}{d t}\left\langle N^2\left(E+S/3\right)\right\rangle_{\Sigma}\right),
+\end{align}
+where the LHS are the various backreactions and in the RHS is an "averaged" continuity equation. 
+
+To prove this, take the continuity equation in \cref{eqn:energy_conserv_law_normal}, by multiplying $\times N^3$ and taking its average we get
+\begin{align}
+    \left\langle N^2\frac{d E}{dt}\right\rangle + \left\langle NK N^2(E+S)\right\rangle =  -\left\langle N^3\left( 2 A_\alpha J^\alpha +  D_\alpha J^\alpha+ S^{\alpha\beta}A_{\alpha\beta}\right)\right\rangle,
+\end{align}
+where via the commutation rule in \cref{eqn:comoving_commutation_rule_buchert}, the relation in , and the scale factor in \cref{eqn:def_scale_factor}, we obtain
 
 
-By writing the RHS of \cref{eqn:friedman_eqs_jf_1,eqn:raychaud_eqs_jf_1} in terms of an effective energy density and effective pressur, in the following way
+
+\subsubsection{According to the Fluid Flow, $D/Dt$}
+
+In this section, we will show the Friedmann equations according to the fluid flow, this frame is useful because it represents the rest-fluid frame, where its rest-mass is preserved.
+
+In the last chapter we considered models which involve multiple fluids, e.g. matter and a scalar field, hence multiple fluid congruences are present.
+This calls for a more precise definition of the time derivative according to the fluid flow in \cref{eqn:fluid_total_time_expression}, therefore one has three possibilities: Defining a time derivative for each fluid; defining an effective time derivative; or assuming the fluids to be comoving, and hence having the same time derivative.
+
+The Hubble function w.r.t the fluid flow is
+\begin{equation}
+    \frac{1}{a_{\Sigma}}\frac{Da_{\Sigma}}{Dt}\equiv\frac{1}{3}\left\langle NK+D_i(NV^i) \right\rangle_{\Sigma}.
+    \label{eqn:def_scale_factor_fluid}
+\end{equation}
+
+From the same procedure as in the last section, we obtain
+\begin{align}
+    &3\left(\frac{1}{a_\Sigma}\frac{Da_\Sigma}{Dt}\right)^2=8\pi\left\langle N^2E\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_1_fluid}\\
+    &3\frac{1}{a_{\Sigma}}\frac{D^2a_{\Sigma}}{Dt^2}=-4\pi\left\langle N^2(E+S)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}\label{eqn:raychaud_eqs_jf_1_fluid}
+\end{align}
+where the kinematical and dynamical backreactions are defined as
+\begin{align}
+    \mathcal{R}_\Sigma :=&\left\langle N^2 \prescript{(3)}{}{R}\right\rangle_{\Sigma}\\
+    \mathcal{Q}_{\Sigma}:=& \left\langle N^2\left(K^2-K_{ij}K^{ij}\right)\right\rangle_{\Sigma}-\frac{2}{3}\left\langle NK+D_i(NV^i)\right\rangle_{\Sigma}^2, \\
+    \mathcal{P}_{\Sigma}:= &\left\langle \left(D_i(NV^i)\right)^2 + \frac{D}{Dt}\left(D_i(NV^i)\right)+2NKD_i(NV^i)+N^2V^iD_i K\right\rangle_\Sigma+ \\
+    &\qquad\qquad+ \left\langle N D_i D^i N+K\frac{DN}{Dt}\right\rangle_{\Sigma}.
+\end{align}
+
+
+By writing the RHS of \cref{eqn:friedman_eqs_jf_1_fluid,eqn:raychaud_eqs_jf_1_fluid} in terms of an effective energy density and effective pressur, in the following way
 \begin{align}
     &E_{\mathrm{eff}} = \left\langle N^2 \rho\right\rangle_{\Sigma}-\frac{1}{16\pi}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\sum_a \mathcal{T}^{(a)}_{\Sigma}\right),\\
     &S_{\mathrm{eff}}:=3\left\langle N^2 P\right\rangle_{\Sigma}-\frac{1}{16\pi}\left[3\mathcal{Q}_{\Sigma}+4\mathcal{P}_{\Sigma}-\mathcal{R}_\Sigma+\sum_a\mathcal{T}^{(a)}_{\Sigma}\right],
@@ -76,50 +117,44 @@ where we introduce a new kind of backreaction, the stress energy backreaction $\
 \end{equation}
 where $u_{(a)}^\mu$ is the four-velocity of the corresponding species $(a)$.
 
-Due to the possible presence of multiple fluid flows, as in the JBD theory, each with their own four-velocity $\mathbf{u}_{(a)}$, and subsequently time derivative. 
-
 With the new backreaction we get
 \begin{align}
-    &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=8\pi\left\langle N^2\rho\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\mathcal{T}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_2}\\
-    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-4\pi\left\langle N^2(\rho+3P)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}+\frac{1}{2}\mathcal{T}_{\Sigma}\label{eqn:raychaud_eqs_jf_2},
+    &3\left(\frac{1}{a_\Sigma}\frac{Da_\Sigma}{Dt}\right)^2=8\pi\left\langle N^2\rho\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\mathcal{T}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_2_fluid}\\
+    &3\frac{1}{a_{\Sigma}}\frac{D^2a_{\Sigma}}{Dt^2}=-4\pi\left\langle N^2(\rho+3P)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}+\frac{1}{2}\mathcal{T}_{\Sigma}\label{eqn:raychaud_eqs_jf_2_fluid},
 \end{align}
 where the sum on the species is implicit.
 
-A necessary condition for \cref{eqn:friedman_eqs_jf_2} to yield \cref{eqn:raychaud_eqs_jf_2} is the integrability condition given by \cite{Buchert_2020},
+A necessary condition for \cref{eqn:friedman_eqs_jf_2_fluid} to yield \cref{eqn:raychaud_eqs_jf_2_fluid} is the integrability condition given by \cite{Buchert_2020},
 \begin{align}
 \begin{gathered}
-\frac{1}{a_\Sigma^6}\left[\frac{d}{d t}\left(a_\Sigma^6\mathcal{Q}_{\Sigma}\right)+a_\Sigma^4\frac{d}{dt}\left(a_\Sigma^2\mathcal{R}_{\Sigma}\right)+a_\Sigma^2\frac{d}{dt}\left(a_\Sigma^4 \mathcal{T}_{\Sigma}\right)+4a_\Sigma^5\frac{da_\Sigma}{dt}\mathcal{P}_{\Sigma}\right]=\nonumber \\
-=2k\left(\frac{d}{d t}\left\langle N^2 \rho\right\rangle_{\Sigma}+\frac{3}{a_{\Sigma}} \frac{d a_{\Sigma}}{d t}\left\langle N^2(\rho+P)\right\rangle_{\Sigma}\right),
+\frac{1}{a_\Sigma^6}\left[\frac{D}{D t}\left(a_\Sigma^6\mathcal{Q}_{\Sigma}\right)+a_\Sigma^4\frac{D}{Dt}\left(a_\Sigma^2\mathcal{R}_{\Sigma}\right)+a_\Sigma^2\frac{D}{Dt}\left(a_\Sigma^4 \mathcal{T}_{\Sigma}\right)+4a_\Sigma^5\frac{Da_\Sigma}{Dt}\mathcal{P}_{\Sigma}\right]=\nonumber \\
+=2k\left(\frac{D}{D t}\left\langle N^2 \rho\right\rangle_{\Sigma}+\frac{3}{a_{\Sigma}} \frac{D a_{\Sigma}}{D t}\left\langle N^2\left(\rho+P\right)\right\rangle_{\Sigma}\right),
 \end{gathered}
 \end{align}
 where the LHS are the various backreactions and in the RHS is an "averaged" continuity equation. 
-To prove this, take the continuity equation in \cref{conse}, by multiplying $\times N^3$ and taking its average we get
+
+
+
+To prove this, take the continuity equation in \cref{eqn:energy_conserv_law_normal}, by multiplying $\times N^3$ and taking its average we get
 \begin{align}
-    \left\langle N^2\frac{d E}{dt}\right\rangle + \left\langle N\Theta N^2(E+S)\right\rangle =  -\left\langle N^3\left( 2 A_\alpha J^\alpha +  D_\alpha J^\alpha+ S^{\alpha\beta}A_{\alpha\beta}\right)\right\rangle,
+    \left\langle N^2\frac{d E}{dt}\right\rangle + \left\langle NK N^2(E+S)\right\rangle =  -\left\langle N^3\left( 2 A_\alpha J^\alpha +  D_\alpha J^\alpha+ S^{\alpha\beta}A_{\alpha\beta}\right)\right\rangle,
 \end{align}
 where via the commutation rule in \cref{eqn:comoving_commutation_rule_buchert}, the relation in , and the scale factor in \cref{eqn:def_scale_factor}, we obtain
+
+
 \begin{align}
     &\frac{d}{dt}\left\langle N^2\rho\right\rangle+3\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\langle N^2(\rho+P)\rangle=3\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\langle N^2P\rangle+\left\langle \left(2\frac{d\ln N}{dt}-\frac{d\ln \Gamma}{dt}\right)N^2\rho\right\rangle\\
     &-\left\langle\left(NK+\frac{d\ln\Gamma}{dt}\right)N^2P\right\rangle-\left\langle \frac{N^3}{\Gamma}\left(2A_\alpha q^\alpha+D^{(u)}_\alpha q^\alpha\right)\right\rangle
 \end{align}
 
 
+%\subsection{Homogeneous scalar field}
 
-
-\subsection{Homogeneous scalar field}
-
-Let us consider a homogeneous field $\phi=\phi(t)$, in this scenario we have
-\begin{align}
-    &(\nabla\phi)^2=g^{00}(\partial_0\phi)^2=-\frac{1}{N^2}\left(\frac{d\phi}{dt}\right)^2, \qquad A^\mu\nabla_\mu\phi=g^{0i}A_i\nabla_0\phi=-\frac{\beta^i A_i}{N^2}\frac{d\phi}{dt}\\
-    &\Box\phi=g^{00}\nabla_0\nabla_0\phi=-\frac{1}{N^2}\frac{d^2\phi}{dt^2},\qquad \frac{1}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)=\frac{1}{N^2}\left[\frac{d\phi}{dt}\frac{d}{dt}\ln\left(\frac{1}{N}\right)+\frac{d^2\phi}{dt^2}\right]
-\end{align}
-
-
-
-
-
-
-
+%Let us consider a homogeneous field $\phi=\phi(t)$, in this scenario we have
+%\begin{align}
+%    &(\nabla\phi)^2=g^{00}(\partial_0\phi)^2=-\frac{1}{N^2}\left(\frac{d\phi}{dt}\right)^2, \qquad A^\mu\nabla_\mu\phi=g^{0i}A_i\nabla_0\phi=-\frac{\beta^i A_i}{N^2}\frac{d\phi}{dt}\\
+%    &\Box\phi=g^{00}\nabla_0\nabla_0\phi=-\frac{1}{N^2}\frac{d^2\phi}{dt^2},\qquad \frac{1}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)=\frac{1}{N^2}\left[\frac{d\phi}{dt}\frac{d}{dt}\ln\left(\frac{1}{N}\right)+\frac{d^2\phi}{dt^2}\right]
+%\end{align}
 
 
 
@@ -130,41 +165,76 @@ The effective conformal scale factor is given by
     \frac{\Tilde{a}_{\Tilde{\Sigma}}}{\Tilde{a}_{\Tilde{\Sigma}_0}}:=\left(\frac{\Tilde{V}_{\Tilde{\Sigma}}}{\Tilde{V}_{\Tilde{\Sigma}_0}}\right)^{1/3}.
 \end{equation}
 
-The effective conformal Hubble expansion is thus defined as
+The effective conformal Hubble expansion w.r.t the fluid flow is thus defined as
 \begin{equation}
-    \Tilde{H} := \frac{1}{\Tilde{a}}\frac{d\Tilde{a}}{dt}\equiv \frac{1}{3\Tilde{V}}\frac{d\Tilde{V}}{dt}\equiv\frac{1}{3}\left\langle \Tilde{N}\Tilde{K} \right\rangle_{\Tilde{\Sigma}}.
+    \Tilde{H} := \frac{1}{\Tilde{a}}\frac{D\Tilde{a}}{Dt}\equiv \frac{1}{3\Tilde{V}}\frac{D\Tilde{V}}{Dt}\equiv\frac{1}{3}\left\langle \Tilde{N}\Tilde{K}+\tilde{D}_i(NV^i) \right\rangle_{\Tilde{\Sigma}}.
 \end{equation}
 
 From the same procedure as in the Jordan frame, the averaged conformal Friedman equation are
 \begin{align}
-    &3\left(\frac{1}{\Tilde{a}}\frac{d\Tilde{a}}{dt}\right)^2 = k\left\langle \Tilde{N}^2\Tilde{E}\right\rangle_{\Tilde{\Sigma}}-\frac{1}{2}\Tilde{\mathcal{R}}_{\Tilde{\Sigma}}-\frac{1}{2}\Tilde{\mathcal{Q}}_{\Tilde{\Sigma}},\\
-    &3\frac{1}{\Tilde{a}_{\Tilde{\Sigma}}}\frac{d^2\Tilde{a}_{\Tilde{\Sigma}}}{dt^2}=-\frac{k}{2}\left\langle \Tilde{N}^2\left(\Tilde{E}+\Tilde{S}\right)\right\rangle_{\Tilde{\Sigma}}+\Tilde{\mathcal{Q}}_{\Tilde{\Sigma}}+\Tilde{\mathcal{P}}_{\Tilde{\Sigma}},
+    &3\left(\frac{1}{\Tilde{a}}\frac{D\Tilde{a}}{Dt}\right)^2 = \kappa^2\left\langle \Tilde{N}^2\Tilde{\rho}\right\rangle_{\Tilde{\Sigma}}-\frac{1}{2}\Tilde{\mathcal{R}}-\frac{1}{2}\Tilde{\mathcal{Q}}-\frac{1}{2}\Tilde{\mathcal{T}},\\
+    &3\frac{1}{\Tilde{a}}\frac{D^2\Tilde{a}}{Dt^2}=-\frac{\kappa^2}{2}\left\langle \Tilde{N}^2\left(\Tilde{\rho}+3\Tilde{P}\right)\right\rangle_{\Tilde{\Sigma}}+\Tilde{\mathcal{Q}}+\Tilde{\mathcal{P}}+\frac{1}{2}\Tilde{\mathcal{T}},
 \end{align}
 where the average intrinsic curvature, the kinematical and dynamical backreactions are defined as
 \begin{align}
-    \tilde{\mathcal{Q}}_{\tilde{\Sigma}}:=& \left\langle \tilde{N}^2\left(\tilde{K}^2+\tilde{K}_{ij}\tilde{K}^{ij}\right)\right\rangle_{\tilde{\Sigma}}-\frac{2}{3}\left\langle \tilde{N}\tilde{K}\right\rangle_{\tilde{\Sigma}}^2, \\
-    \tilde{\mathcal{P}}_{\tilde{\Sigma}}:=&\left\langle \tilde{N} \tilde{D}_i \tilde{D}^i \tilde{N}+\tilde{K}\frac{d\tilde{N}}{dt}\right\rangle_{\tilde{\Sigma}}.
+    \tilde{\mathcal{R}}:=& \left\langle \tilde{N}^2\prescript{3}{}{\tilde{R}}\right\rangle_{\tilde{\Sigma}}\\
+    \tilde{\mathcal{Q}}:=& \left\langle \tilde{N}^2\left(\tilde{K}^2-\tilde{K}_{ij}\tilde{K}^{ij}\right)\right\rangle_{\tilde{\Sigma}}-\frac{2}{3}\left\langle \tilde{N}\tilde{K}+\tilde{D}_i(NV^i)\right\rangle_{\tilde{\Sigma}}^2, \\
+    \tilde{\mathcal{P}}:=& \left\langle \left(\tilde{D}_i(NV^i)\right)^2 + \frac{D}{Dt}\left(\tilde{D}_i(NV^i)\right)+2\tilde{N}\tilde{K}\tilde{D}_i(NV^i)+\tilde{N}NV^i\tilde{D}_i \tilde{K}\right\rangle_\Sigma+ \\
+    &\qquad\qquad+ \left\langle \tilde{N} \tilde{D}_i \tilde{D}^i \tilde{K}+\tilde{K}\frac{D\tilde{N}}{Dt}\right\rangle_{\Sigma},\\
+    \tilde{\mathcal{T}}:=&-2\kappa^2\left\langle \tilde{N}^2\left(\tilde{n}^\mu \tilde{n}^\nu-\tilde{u}^\mu \tilde{u}^\nu\right)\tilde{T}_{\mu\nu}\right\rangle_\Sigma,
 \end{align}
 and they relate to the usual backreactions by
 \begin{align}
-    &\mathcal{Q}_\Sigma = \tilde{\mathcal{Q}}_{\tilde{\Sigma}} - 4 \frac{d}{dt}\ln\Omega\left\langle  \tilde{N}\tilde{K}\right\rangle_{\tilde{\Sigma}}+6\left(\frac{d}{dt}\ln\Omega\right)^2\\
-    &\mathcal{P}_\Sigma = \tilde{\mathcal{P}}_{\tilde{\Sigma}}+\frac{d}{dt}\ln\Omega\left\langle \tilde{N}\tilde{K}+3\frac{d}{dt}\ln\tilde{N}\right\rangle_{\tilde{\Sigma}}+3\left(\frac{d}{dt}\ln\Omega\right)^2
+    &\mathcal{Q}_\Sigma = \tilde{\mathcal{Q}} - 4 \frac{D}{Dt}\ln\Omega\left\langle  \tilde{N}\tilde{K}+\tilde{D}_i(NV^i)\right\rangle_{\tilde{\Sigma}}+6\left(\frac{D}{Dt}\ln\Omega\right)^2,\\
+    &\mathcal{P}_\Sigma = \tilde{\mathcal{P}}+\frac{D}{Dt}\ln\Omega\left\langle \tilde{N}\tilde{K}+6\tilde{D}_i(NV^i)+3\tilde{N}\mathcal{L}_{\mathbf{\tilde{n}}}\ln\tilde{N}\right\rangle_{\tilde{\Sigma}}+3\left(\frac{D}{Dt}\ln\Omega\right)^2,
 \end{align}
 where we assume the conformal factor to be homogeneous.
 
-Like before, the Friedmann equations can be simplified into a more familiar form:
+Introducing \cref{eqn:energy_density_ef,eqn:pressure_ef}, we obtain
 \begin{align}
-    &3\left(\frac{1}{\Tilde{a}}\frac{d\Tilde{a}}{dt}\right)^2 = k\tilde{E}_{\mathrm{eff}},\\
-    &3\frac{1}{\Tilde{a}_{\Tilde{\Sigma}}}\frac{d^2\Tilde{a}_{\Tilde{\Sigma}}}{dt^2}=-\frac{k}{2}(\tilde{E}_{\mathrm{eff}}+\tilde{S}_{\mathrm{eff}}),
+    &\left\langle \Tilde{N}^2\Tilde{\rho}\right\rangle_{\Tilde{\Sigma}} := \left\langle \tilde{N}^2 \alpha(\varphi)\tilde{\rho}_m \right\rangle_{\Tilde{\Sigma}}+\frac{1}{2}\left\langle \left(\Gamma\frac{D\varphi}{Dt}\right)^2+\tilde{N}^2 \tilde{b}^{\alpha\beta}\tilde{D}_\alpha\varphi \tilde{D}_\beta\varphi\right\rangle_{\tilde{\Sigma}}, \\
+    &\left\langle \Tilde{N}^2\left(\Tilde{\rho}+3\Tilde{P}\right)\right\rangle_{\Tilde{\Sigma}} := \left\langle \tilde{N}^2 \alpha(\varphi)\left(\tilde{\rho}_m+3\tilde{P}_m\right) \right\rangle_{\Tilde{\Sigma}}+2\left\langle \left(\Gamma\frac{D\varphi}{Dt}\right)^2 \right\rangle_{\tilde{\Sigma}}.
 \end{align}
-where the effective energy density and pressure are given by the same form as in \cref{eqn:E_eff_1,eqn:S_eff_1}, and by introducing the \cref{eqn:energy_density_ef,eqn:pressure_ef}, we obtain
+
+From the conservation law of the matter EM tensor in the conformal frame, in \cref{eqn:conserv_law_conf_1}, by projecting along the fluid flow:
 \begin{align}
-    &\tilde{E}_{\mathrm{eff}} := \left\langle \tilde{N}^2 \alpha(\varphi)\tilde{\rho}_m \right\rangle_{\Tilde{\Sigma}}+\left\langle \frac{1}{2}\left(\frac{d\varphi}{dt}\right)^2+\frac{1}{2}\tilde{N}^2\tilde{D}_\alpha\varphi \tilde{D}^\alpha\varphi\right\rangle_{\tilde{\Sigma}} \\
-    &\qquad\qquad-\frac{1}{2k'}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\mathcal{T}^{(m)}_{\Sigma}\right),\\
-    &\tilde{S}_{\mathrm{eff}} := 3\left\langle \tilde{N}^2 \alpha(\varphi)\tilde{P}_m \right\rangle_{\Tilde{\Sigma}}+\left\langle \frac{3}{2}\left(\frac{d\varphi}{dt}\right)^2-\frac{1}{2}\tilde{N}^2\tilde{D}_\alpha\varphi \tilde{D}^\alpha\varphi\right\rangle_{\tilde{\Sigma}}\\
-    &\qquad\qquad-\frac{1}{2k'}\left[3\mathcal{Q}_{\Sigma}+4\mathcal{P}_{\Sigma}-\mathcal{R}_\Sigma+\mathcal{T}^{(m)}_{\Sigma}\right],
+\begin{gathered}
+    \tilde{u}_\beta\tilde{\nabla}_\alpha \tilde{T}_{(m)}^{\alpha\beta}=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}} \tilde{T}^{(m)} \tilde{u}_\beta\tilde{\nabla}^\beta \varphi \Leftrightarrow\\
+    \Leftrightarrow \frac{\Gamma}{\tilde{N}}\frac{D\tilde{\rho}_m}{Dt} + \tilde{\Theta}(\tilde{\rho}_m+\tilde{P}_m) + \tilde{A}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha + \tilde{\nabla}_\alpha \tilde{q}^\alpha +\tilde{\pi}^{\alpha\beta}\tilde{\sigma}_{\alpha\beta}= \frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}} \tilde{T}^{(m)} \frac{\Gamma}{\tilde{N}}\frac{D\varphi}{Dt}
+\end{gathered}
 \end{align}
+where we use the \cref{eqn:energy_conserv_law_fluid}. By multiplying by $\times \tilde{N}^3/\Gamma$, averaging and using the commutation rule:
+\begin{align}
+    &\frac{D}{Dt}\left\langle \tilde{N}^2\tilde{\rho}_m\right\rangle_{\tilde{\Sigma}}+3\frac{1}{\tilde{a}}\frac{D\tilde{a}}{Dt}\langle \tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\rangle_{\tilde{\Sigma}}=-\left\langle\delta\hat{\Theta}\delta(\tilde{N}^2\tilde{P}_m)\right\rangle_{\tilde{\Sigma}}+2\left\langle \tilde{N}^2\rho_m \frac{D}{Dt}\ln\tilde{N}\right\rangle_{\tilde{\Sigma}}\nonumber\\
+    &-\left\langle \frac{\tilde{N}^3}{\Gamma}\left(2\tilde{A}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha+\tilde{D}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha+\tilde{\pi}_{\alpha\beta}\tilde{\sigma}^{\alpha\beta}\right)\right\rangle_{\tilde{\Sigma}}-\left\langle\tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\frac{D}{Dt}\ln\Gamma\right\rangle_{\tilde{\Sigma}}\nonumber\\
+    &+\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle \tilde{N}^2(-\tilde{\rho}_m+3\tilde{P}_m)\frac{D\varphi}{Dt}\right\rangle_{\tilde{\Sigma}},
+\end{align}
+where we use $\hat{\Theta}=\langle\hat{\Theta}\rangle+\delta\hat{\Theta}$ and a fluctuation also around the pressure.
+
+Decomposing the scalar field equation of motion:
+\begin{align}
+    \Tilde{\Box}\varphi&=\tilde{g}^{\mu\nu}\tilde{\nabla}_\mu\tilde{\nabla}_\nu\varphi\equiv -\frac{\Gamma}{\tilde{N}}\frac{D}{Dt}\left(\frac{\Gamma}{\tilde{N}}\frac{D\varphi}{Dt}\right)+\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi +\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu\varphi-\frac{\Gamma}{\tilde{N}}\tilde{\Theta}\frac{D\varphi}{Dt}\\
+    &=\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}(-\rho_m+3P_m),
+\end{align}
+by multiplying by $\times (\tilde{N}/\Gamma)^2$ we get
+\begin{align}
+    &\frac{D^2\varphi}{Dt^2}+\frac{D\varphi}{Dt}\frac{D}{Dt}\ln\left(\frac{\Gamma}{\tilde{N}}\right)-\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi -\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu\varphi+\frac{\tilde{N}}{\Gamma}\tilde{\Theta}\frac{D\varphi}{Dt}\\
+    &=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\rho_m+3P_m),
+\end{align}
+now taking the average and applying the commutation rule twice:
+\begin{align}
+    &\frac{D}{Dt}\left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right)+\langle\hat{\Theta}\rangle_{\tilde{\Sigma}} \left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right) +\left\langle\frac{D\varphi}{Dt}\frac{D}{Dt}\ln\left(\frac{\Gamma^2}{\tilde{N}}\right)\right\rangle_{\tilde{\Sigma}}\\
+    &-\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi\right\rangle_{\tilde{\Sigma}} -\left\langle \left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu \varphi \right\rangle_{\tilde{\Sigma}}=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\rho_m+3P_m)\right\rangle_{\tilde{\Sigma}},\nonumber
+\end{align}
+where $\delta\varphi$ is the fluctuation around the spatially averaged scalar field.
+
+
 
 
 
 \section{Bergmann-Wagoner theory}
+
+
+
+
+
