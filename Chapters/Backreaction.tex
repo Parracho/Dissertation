@@ -16,15 +16,9 @@ The effective Hubble expansion is thus defined as
     \label{eqn:def_scale_factor}
 \end{equation}
 
-\begin{align}
-    \frac{1}{a}\frac{d^2a}{dt^2}&=\frac{d}{dt}\left(\frac{1}{a}\frac{da}{dt}\right)+\left(\frac{1}{a}\frac{da}{dt}\right)^2=\frac{1}{3}\frac{d}{dt}\left\langle NK \right\rangle_{\Sigma}+\frac{1}{9}\left\langle NK \right\rangle_{\Sigma}^2\nonumber\\
-    &=\frac{1}{3}\left\langle \frac{d}{dt}(NK) \right\rangle_{\Sigma}+\frac{1}{3}\langle N^2K^2\rangle_{\Sigma}-\frac{1}{3}\langle NK\rangle^2_\Sigma+\frac{1}{9}\left\langle NK \right\rangle_{\Sigma}^2\nonumber\\
-    &=\frac{1}{3}\left\langle \frac{d}{dt}(NK) \right\rangle_{\Sigma}+\frac{1}{3}\langle N^2K^2\rangle_{\Sigma}-\frac{2}{9}\langle NK\rangle^2_\Sigma
-    \label{eqn:useful_51}
-\end{align}
 
 
-The objective now is to obtain a Friedmannian equation, we can do this by taking the energy equation in \cref{eqn:energy_equation}, multiplying by $N^2$ and taking the average:
+The objective now is to obtain a Friedmannian equation, we can do this by taking the energy equation in \cref{eqn:energy_equation_normal}, multiplying by $N^2$ and taking the average:
 \begin{equation}
     k\langle N^2E\rangle=\frac{1}{2}\langle N^2\prescript{3}{}{R}\rangle+\frac{1}{2}\langle N^2(K^2+K_{ij}K^{ij})\rangle,
 \end{equation}
@@ -34,11 +28,20 @@ from here by summing $3\left(\frac{1}{a}\frac{da}{dt}\right)^2$ on the RHS and $
 \end{equation}
 
 
-Now for the Raychaudhuri equation, by summing the \cref{eqn:energy_equation,eqn:pressure_equation}, multiplying by $N^2$ and taking the average:
+
+Now for the Raychaudhuri equation, by summing the \cref{eqn:energy_equation_normal,eqn:pressure_equation_normal}, multiplying by $N^2$ and taking the average:
 \begin{equation}
     \frac{k}{2}\langle N^2(E+S)\rangle_\Sigma=-\left\langle N\frac{dK}{dt}\right\rangle_\Sigma+\langle N^2K_{ij}K^{ij}\rangle_\Sigma+\langle ND_iD^iN\rangle_\Sigma,
+    \label{eqn:ray_1_normal}
 \end{equation}
-from here by summing $3\frac{1}{a}\frac{d^2a}{dt^2}$ on the LHS and the expression of \cref{eqn:useful_51} on the RHS, we obtain
+from here by determining
+\begin{align}
+    \frac{1}{a}\frac{d^2a}{dt^2}&=\frac{d}{dt}\left(\frac{1}{a}\frac{da}{dt}\right)+\left(\frac{1}{a}\frac{da}{dt}\right)^2=\frac{1}{3}\frac{d}{dt}\left\langle NK \right\rangle_{\Sigma}+\frac{1}{9}\left\langle NK \right\rangle_{\Sigma}^2\nonumber\\
+    &=\frac{1}{3}\left\langle \frac{d}{dt}(NK) \right\rangle_{\Sigma}+\frac{1}{3}\langle N^2K^2\rangle_{\Sigma}-\frac{1}{3}\langle NK\rangle^2_\Sigma+\frac{1}{9}\left\langle NK \right\rangle_{\Sigma}^2\nonumber\\
+    &=\frac{1}{3}\left\langle \frac{d}{dt}(NK) \right\rangle_{\Sigma}+\frac{1}{3}\langle N^2K^2\rangle_{\Sigma}-\frac{2}{9}\langle NK\rangle^2_\Sigma,
+    \label{eqn:useful_51}
+\end{align}
+in order to sum on the \cref{eqn:ray_1_normal}, we obtain
 \begin{equation}
     3\frac{1}{a}\frac{d^2a}{dt^2}=-\frac{k}{2}\langle N^2(E+S)\rangle_\Sigma+\left\langle N^2(K^2+K_{ij}K^{ij})\right\rangle_{\Sigma}-\frac{2}{3}\langle NK\rangle^2_\Sigma+\left\langle ND_iD^i N+K\frac{dN}{dt}\right\rangle.\nonumber
 \end{equation}
@@ -49,44 +52,30 @@ from here by summing $3\frac{1}{a}\frac{d^2a}{dt^2}$ on the LHS and the expressi
 
 The averaged Friedman and Raychaudhuri equations as
 \begin{align}
-    &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=k'E_{\mathrm{eff}},\label{eqn:friedman_eqs_jf_1}\\
-    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-\frac{k'}{2}\left(E_{\mathrm{eff}}+S_{\mathrm{eff}}\right)\label{eqn:raychaud_eqs_jf_1}
+    &3\left(\frac{1}{a_\Sigma}\frac{da_\Sigma}{dt}\right)^2=8\pi\left\langle N^2E\right\rangle_{\Sigma}-\frac{1}{2}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}\right),\label{eqn:friedman_eqs_jf_1}\\
+    &3\frac{1}{a_{\Sigma}}\frac{d^2a_{\Sigma}}{dt^2}=-\frac{8\pi}{2}\left\langle N^2(E+S)\right\rangle_{\Sigma}+\mathcal{Q}_{\Sigma}+\mathcal{P}_{\Sigma}\label{eqn:raychaud_eqs_jf_1}
 \end{align}
-where $E_{\mathrm{eff}}$ and $S_{\mathrm{eff}}$ are the effective energy density and pressure according to the observer:
-\begin{align}
-    &E_{\mathrm{eff}}:=\left\langle N^2E\right\rangle_{\Sigma}-\frac{1}{2k'}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}\right),
-    \label{eqn:E_eff_1}\\
-    &S_{\mathrm{eff}}:=\left\langle N^2 S\right\rangle_{\Sigma}-\frac{1}{2k'}\left[3\mathcal{Q}_{\Sigma}+4\mathcal{P}_{\Sigma}-\mathcal{R}_\Sigma\right]\label{eqn:S_eff_1}
-\end{align}
-where the kinematical and dynamical backreactions are defined as \cite{Buchert_2020}
+where the kinematical and dynamical backreactions are defined as
 \begin{align}
     \mathcal{R}_\Sigma :=&\left\langle N^2 \prescript{(3)}{}{R}\right\rangle_{\Sigma}\\
     \mathcal{Q}_{\Sigma}:=& \left\langle N^2\left(K^2+K_{ij}K^{ij}\right)\right\rangle_{\Sigma}-\frac{2}{3}\left\langle NK\right\rangle_{\Sigma}^2, \\
-    \mathcal{P}_{\Sigma}:= &\left\langle N D_i D^i N+K\frac{dN}{dt}\right\rangle_{\Sigma},
+    \mathcal{P}_{\Sigma}:= &\left\langle N D_i D^i N+K\frac{dN}{dt}\right\rangle_{\Sigma}.
 \end{align}
 
-\textcolor{blue}{verificar invariancia de gauge}
 
 
 
-
-
-
-
-By expressing the effective energy density and pressure in \cref{eqn:E_eff_1,eqn:S_eff_1}, with \cref{eqn:energy_density_jf,eqn:pressure_jf}
+By writing the RHS of \cref{eqn:friedman_eqs_jf_1,eqn:raychaud_eqs_jf_1} in terms of an effective energy density and effective pressur, in the following way
 \begin{align}
-    &E_{\mathrm{eff}} = \left\langle N^2 \rho\right\rangle_{\Sigma}-\frac{1}{2k'}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\sum_a \mathcal{T}^{(a)}_{\Sigma}\right),\\
-    &S_{\mathrm{eff}}:=3\left\langle N^2 P\right\rangle_{\Sigma}-\frac{1}{2k'}\left[3\mathcal{Q}_{\Sigma}+4\mathcal{P}_{\Sigma}-\mathcal{R}_\Sigma+\sum_a\mathcal{T}^{(a)}_{\Sigma}\right],
+    &E_{\mathrm{eff}} = \left\langle N^2 \rho\right\rangle_{\Sigma}-\frac{1}{16\pi}\left(\mathcal{R}_\Sigma+\mathcal{Q}_{\Sigma}+\sum_a \mathcal{T}^{(a)}_{\Sigma}\right),\\
+    &S_{\mathrm{eff}}:=3\left\langle N^2 P\right\rangle_{\Sigma}-\frac{1}{16\pi}\left[3\mathcal{Q}_{\Sigma}+4\mathcal{P}_{\Sigma}-\mathcal{R}_\Sigma+\sum_a\mathcal{T}^{(a)}_{\Sigma}\right],
 \end{align}
-where we introduce a new kind of backreaction, the stress energy backreaction $\mathcal{T}^{(a)}_\Sigma$, in which the index $a$ refers to the species (matter, radiation or scalar field), in order to express the matter energy density and pressure according to the fluid flow, $\rho_m$ and $P_m$, where it is given by
+where we introduce a new kind of backreaction, the stress energy backreaction $\mathcal{T}^{(a)}_\Sigma$, in which the index $a$ refers to the species (matter, radiation or scalar field), in order to express the energy density and pressure according to the multiple fluid flows, e.g. $\rho=\rho_m+\rho_\varphi$ and $P=P_m+P_\varphi$, where it is given by
 \begin{equation}
-    \mathcal{T}^{(a)}_{\Sigma}=-2k\left\langle N^2\left(n^\mu n^\nu-u^\mu_{(a)} u^\nu_{(a)}\right)T_{\mu\nu}^{(a)}\right\rangle_\Sigma,
+    \mathcal{T}^{(a)}_{\Sigma}=-16\pi\left\langle N^2\left(n^\mu n^\nu-u^\mu_{(a)} u^\nu_{(a)}\right)T_{\mu\nu}^{(a)}\right\rangle_\Sigma,
 \end{equation}
 where $u_{(a)}^\mu$ is the four-velocity of the corresponding species $(a)$.
 
-
-
-\textcolor{blue}{Como diferenciar termos cinematicos de termos dinamicos}
 
 
 

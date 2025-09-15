@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1757943862.54952 "main.aux" "main.bbl" "main" 1757944369.02477 0
+["bibtex main"] 1757945355.39238 "main.aux" "main.bbl" "main" 1757946379.39377 0
   "./Bibliography.bib" 1757753301 50035 5e033fd6f726129578ac4d3abf1fea3a ""
   "c:/texlive/2024/texmf-dist/bibtex/bst/ieeetran/IEEEtranN.bst" 1738985025 63583 d34cb6c328acc69716207f4a3421ad46 ""
-  "main.aux" 1757944365 25534 7d58c977827962b8de1d5c1d69e23a1d "xelatex"
+  "main.aux" 1757946375 25312 dcd05e52e979619456d80023ab2e9394 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1757944367.42901 "main.xdv" "main.pdf" "main" 1757944369.06396 0
-  "main.xdv" 1757944365 799924 a7f0b33a1bba593bfe9380ef9d182221 "xelatex"
+["xdvipdfmx"] 1757946377.6805 "main.xdv" "main.pdf" "main" 1757946379.43797 0
+  "main.xdv" 1757946375 797064 6041c08af73911b4d56429f87b488098 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1757944360.43402 "c:/Users/parra/Documents/GitHub/Dissertation/main.tex" "main.xdv" "main" 1757944369.0254 0
+["xelatex"] 1757946370.9413 "c:/Users/parra/Documents/GitHub/Dissertation/main.tex" "main.xdv" "main" 1757946379.39461 0
   "Appendices/Variational.tex" 1757753301 10038 5bf2b950125d6ac59976c3d448dc3e8f ""
-  "Chapters/Backreaction.tex" 1757941524 11322 426f872bf2a319020b4d64095cdcb4c0 ""
+  "Chapters/Backreaction.tex" 1757946369 10884 cd5a04f4a08e9ac359dcaf16830b1c73 ""
   "Chapters/Brans-Dicke.tex" 1757944358 18079 b6468c0a6987487ba423e6ac30f2f920 ""
   "Chapters/Formalisms.tex" 1757939493 58649 0fcd33bb7e8bdb7c10841992864e8af2 ""
   "Chapters/Introduction.tex" 1757844460 2993 9ae50ebff8cb016a8ab41ad2de620c9b ""
@@ -321,14 +321,14 @@
   "c:/texlive/2024/texmf.cnf" 1738990985 713 e69b156964470283e0530f5060668171 ""
   "epigraphoverload.tex" 1757753302 1229 6dd9414e5b47083e75549dcf4cf895e6 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1757944365 25534 7d58c977827962b8de1d5c1d69e23a1d "xelatex"
-  "main.bbl" 1757943863 4332 9dd6ac298472065656314df327f45ed5 "bibtex main"
-  "main.brf" 1757944365 809 962f6a204a800bafb3a88c4a00358606 "xelatex"
-  "main.glsdefs" 1757944365 516 f8361f33c1b42d1af012f1429dd6dc3d "xelatex"
-  "main.lof" 1757944365 665 7228b1d107790e3a6806b0bd1446be22 "xelatex"
-  "main.out" 1757944365 7084 da6e8924ba0112ed59c5a6dda4affa31 "xelatex"
+  "main.aux" 1757946375 25312 dcd05e52e979619456d80023ab2e9394 "xelatex"
+  "main.bbl" 1757945356 4332 9dd6ac298472065656314df327f45ed5 "bibtex main"
+  "main.brf" 1757946375 756 89ba6e748e9ece5116a8c3f4961ac07e "xelatex"
+  "main.glsdefs" 1757946375 516 f8361f33c1b42d1af012f1429dd6dc3d "xelatex"
+  "main.lof" 1757946375 665 7228b1d107790e3a6806b0bd1446be22 "xelatex"
+  "main.out" 1757946375 7084 da6e8924ba0112ed59c5a6dda4affa31 "xelatex"
   "main.tex" 1757753302 3826 89d998c003c6c30548facb3602702218 ""
-  "main.toc" 1757944365 3552 d06263ad525f39325ff5ad549fb11246 "xelatex"
+  "main.toc" 1757946375 3552 d06263ad525f39325ff5ad549fb11246 "xelatex"
   "preamble.tex" 1757753302 9043 c3e996caf36a4f960f13102e44abcc8b ""
   "precontent.tex" 1757753302 4203 bcd327c7b2fa0381a61817d952709fa4 ""
   "vars.tex" 1757753302 1929 b94adb4d1058691af4e26cf158bbca7d ""
