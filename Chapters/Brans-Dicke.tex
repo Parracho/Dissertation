@@ -10,10 +10,10 @@ In fact, Robert Dicke and Carl Brans, exploited this possibility with a time dep
 
 The simplest way of introducing a time-dependent gravitational constant is represented in the so-called Jordan frame by the following action:
 \begin{equation}
-    S_{\text{JBD}}=\int_{\mathcal{M}} d^4x\left[ \sqrt{-g}\frac{1}{2k'}\left[R\phi-\omega \frac{\phi_{,\rho}\phi^{,\rho}}{\phi}\right]+\sqrt{-g}\mathcal{L}_m\right]
+    S_{\text{JBD}}=\int_{\mathcal{M}} d^4x\left[ \sqrt{-g}\frac{1}{16\pi}\left[R\phi-\omega \frac{\phi_{,\rho}\phi^{,\rho}}{\phi}\right]+\sqrt{-g}\mathcal{L}_m\right]
     \label{eqn:BD_action_JF}
 \end{equation}
-where $\omega$ is the dimensionless Brans-Dicke coupling constant, $k'=8\pi$, and $\mathcal{L}_m$ is the matter Lagrangian describing ordinary matter, i.e. any form of matter different from the scalar field $\phi$. The second term is introduced in order to make the scalar field dynamical, where the factor $\phi$ in the denominator is responsible for making $\omega$ dimensionless.
+where $\omega$ is the dimensionless Brans-Dicke coupling constant, and $\mathcal{L}_m$ is the matter Lagrangian describing ordinary matter, i.e. any form of matter different from the scalar field $\phi$. The second term is introduced in order to make the scalar field dynamical, where the factor $\phi$ in the denominator is responsible for making $\omega$ dimensionless.
 
 In this action, matter is not directly coupled to $\phi$, in the sense that the matter Lagrangian $\mathcal{L}_m$ does not depend on $\phi$, and is minimally coupled to $\phi$. However, in the first term we see that $\phi$ is directly coupled to the metric, via the Ricci scalar. Here the metric and scalar field describe the gravitational field, contrary to other theories where the metric alone describes it, the gravitational field together with the matter will describe the dynamics. 
 
@@ -21,11 +21,11 @@ In this action, matter is not directly coupled to $\phi$, in the sense that the 
 
 The field equations of the Brans-Dicke theory:
 \begin{align}
-G_{\mu\nu}=k'\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)\right\},
+G_{\mu\nu}=8\pi\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{8\pi\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{8\pi\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)\right\},
 \label{eqn:field_eq_metric}
 \end{align}
 \begin{equation}
-    \Box\phi=\frac{k'T^{(m)}}{2\omega+3},
+    \Box\phi=\frac{8\pi T^{(m)}}{2\omega+3},
     \label{eqn:field_eq_phi}
 \end{equation}
 where
@@ -39,20 +39,20 @@ In \cref{eqn:field_eq_phi}, it is clear the scalar field is sourced by matter wi
 
 By defining an effective energy-momentum tensor as
 \begin{equation}
-    T^{\mathrm{eff}}_{\mu\nu}=\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right),
+    T^{\mathrm{eff}}_{\mu\nu}=\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{8\pi\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{8\pi\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right),
 \end{equation}
 we see that its components w.r.t the observer's four-velocity $n_\mu$, are as follows. The energy density:
 \begin{align}
-    E &= T_{\mu\nu}n^\mu n^\nu=\left[\frac{T^{(M)}_{\mu \nu}}{\phi}+\frac{1}{k'}\left(\frac{1}{\phi}\left(\nabla_\mu \nabla_\nu \phi-g_{\mu \nu} \square \phi\right)+\frac{\omega}{\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2} g_{\mu \nu}(\nabla \phi)^2\right]\right)\right]n^\mu n^\nu\nonumber\\
-    &=\frac{E_m}{\phi}+\frac{\omega}{k'\phi^2}\left((n^\mu\partial_\mu \phi)(n^\nu\partial_\nu\phi)-\frac{1}{2}g_{\mu\nu}n^\mu n^\nu (\nabla \phi)^2\right)+\frac{1}{k'\phi}\left(n^\mu n^\nu \nabla_\mu \nabla_\nu - g_{\mu\nu}n^\mu n^\nu \Box\right)\phi\nonumber\\
-    &=\frac{E_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2+\frac{1}{2}(\nabla\phi)^2\right)+\frac{1}{k'\phi}\left[\frac{1}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)-A^\mu\nabla_\mu\phi+\Box\phi\right]=\nonumber\\
-    &=\frac{E_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\frac{1}{2}\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2+\frac{1}{2}h^{\mu\nu}D_\mu\phi D_\nu\phi\right)+\frac{1}{k'\phi}\left[D^\alpha D_\alpha\phi-\frac{K}{N}\frac{d\phi}{dt}\right]
+    E &= T_{\mu\nu}n^\mu n^\nu=\left[\frac{T^{(M)}_{\mu \nu}}{\phi}+\frac{1}{8\pi}\left(\frac{1}{\phi}\left(\nabla_\mu \nabla_\nu \phi-g_{\mu \nu} \square \phi\right)+\frac{\omega}{\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2} g_{\mu \nu}(\nabla \phi)^2\right]\right)\right]n^\mu n^\nu\nonumber\\
+    &=\frac{E_m}{\phi}+\frac{\omega}{8\pi\phi^2}\left((n^\mu\partial_\mu \phi)(n^\nu\partial_\nu\phi)-\frac{1}{2}g_{\mu\nu}n^\mu n^\nu (\nabla \phi)^2\right)+\frac{1}{8\pi\phi}\left(n^\mu n^\nu \nabla_\mu \nabla_\nu - g_{\mu\nu}n^\mu n^\nu \Box\right)\phi\nonumber\\
+    &=\frac{E_m}{\phi}+\frac{\omega}{8\pi\phi^2}\left(\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2+\frac{1}{2}(\nabla\phi)^2\right)+\frac{1}{8\pi\phi}\left[\frac{1}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)-A^\mu\nabla_\mu\phi+\Box\phi\right]=\nonumber\\
+    &=\frac{E_m}{\phi}+\frac{\omega}{8\pi\phi^2}\left(\frac{1}{2}\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2+\frac{1}{2}h^{\mu\nu}D_\mu\phi D_\nu\phi\right)+\frac{1}{8\pi\phi}\left[D^\alpha D_\alpha\phi-\frac{K}{N}\frac{d\phi}{dt}\right]
     \label{eqn:energy_density_jf}
 \end{align}
 where we use the \cref{eqn:relation_total_time_normal_vec}. And the pressure is given by
 \begin{align}
-    S&=T_{\mu\nu}h^{\mu\nu}=\frac{S_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\frac{3}{2}\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2 -\frac{1}{2}h^{\alpha\beta} D_\alpha\phi D_\beta\phi\right)+\label{eqn:pressure_jf}\\
-    &\qquad\qquad\qquad\qquad\qquad+\frac{1}{k'\phi}\left[3N\frac{d^2\phi}{dt^2}-3\frac{d\phi}{dt}\frac{dN}{dt}-3A^\mu\nabla_\mu\phi -2D^\alpha D_\alpha \phi+2\frac{K}{N}\frac{d\phi}{dt} \right],\nonumber
+    S&=T_{\mu\nu}h^{\mu\nu}=\frac{S_m}{\phi}+\frac{\omega}{8\pi \phi^2}\left(\frac{3}{2}\left(\frac{1}{N}\frac{d\phi}{dt}\right)^2 -\frac{1}{2}h^{\alpha\beta} D_\alpha\phi D_\beta\phi\right)+\label{eqn:pressure_jf}\\
+    &\qquad\qquad\qquad\qquad\qquad+\frac{1}{8\pi \phi}\left[3N\frac{d^2\phi}{dt^2}-3\frac{d\phi}{dt}\frac{dN}{dt}-3A^\mu\nabla_\mu\phi -2D^\alpha D_\alpha \phi+2\frac{K}{N}\frac{d\phi}{dt} \right],\nonumber
 \end{align}
 where we use $D_\mu \phi = h_\mu^\alpha \nabla_\alpha\phi \Leftrightarrow h^\mu_\beta D_\mu \phi = h^\alpha_\beta \nabla_\alpha \phi$.
 
@@ -61,7 +61,7 @@ where we use $D_\mu \phi = h_\mu^\alpha \nabla_\alpha\phi \Leftrightarrow h^\mu_
 
 It is useful to determine
 \begin{align}
-    E+S&=\frac{E_m+S_m}{\phi}+\frac{\omega}{k'\phi^2}\left(\frac{1}{N}\frac{d\ln\phi}{dt}\right)^2+\frac{1}{k'\phi}\left[\frac{3}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)-3A^\mu\nabla_\mu\phi-D^\alpha D_\alpha\phi+\frac{K}{N}\frac{d\phi}{dt}\right].
+    E+S&=\frac{E_m+S_m}{\phi}+\frac{\omega}{8\pi \phi^2}\left(\frac{1}{N}\frac{d\ln\phi}{dt}\right)^2+\frac{1}{8\pi \phi}\left[\frac{3}{N}\frac{d}{dt}\left(\frac{1}{N}\frac{d\phi}{dt}\right)-3A^\mu\nabla_\mu\phi-D^\alpha D_\alpha\phi+\frac{K}{N}\frac{d\phi}{dt}\right].
     \label{eqn:raych_useful}
 \end{align}
 
@@ -74,7 +74,7 @@ In 1961, Brans and Dicke showed that under a conformal transformation, in \cref{
 
 By reviewing the action in \cref{eqn:BD_action_JF}, and (eq do ricci):
 \begin{align}
-    S_{\text{JBD}}=&\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\Omega^4\frac{1}{2k'}\left[\Omega^{-2}\left(\Tilde{R}-6\Tilde{\nabla}_\mu\Tilde{\nabla}^\mu\ln\Omega-6\Tilde{\nabla}_\mu\ln\Omega\Tilde{\nabla}^\mu\ln\Omega\right)\phi-\omega \frac{\Omega^{-2}\Tilde{\nabla}_\mu\phi\Tilde{\nabla}^\mu\phi}{\phi}\right]\nonumber\\
+    S_{\text{JBD}}=&\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\Omega^4\frac{1}{16\pi}\left[\Omega^{-2}\left(\Tilde{R}-6\Tilde{\nabla}_\mu\Tilde{\nabla}^\mu\ln\Omega-6\Tilde{\nabla}_\mu\ln\Omega\Tilde{\nabla}^\mu\ln\Omega\right)\phi-\omega \frac{\Omega^{-2}\Tilde{\nabla}_\mu\phi\Tilde{\nabla}^\mu\phi}{\phi}\right]\nonumber\\
     &+\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\Omega^4\mathcal{L}_m(\Omega^{-2}\Tilde{g}^{\mu\nu},\Psi),
     \label{eqn:bd_ef_1}
 \end{align}
@@ -206,7 +206,7 @@ or, in terms of the new scalar field:
 
 Bergmann \cite{Bergmann1968} and Wagoner \cite{wagoner1970} proposed the most general scalar-tensor theory of gravitation, by introducing a cosmological function $\Lambda(\phi)$ and a $\phi$-dependent coupling, $\omega:=\omega(\phi)$, yield the following action:
 \begin{equation}
-    S_{\text{BW}}=\int_{\mathcal{M}} d^4x\left[ \sqrt{-g}\frac{1}{2k'}\left[R\phi-\omega \frac{\phi_{,\rho}\phi^{,\rho}}{\phi}-V(\phi)\right]+\sqrt{-g}\mathcal{L}_m\right].
+    S_{\text{BW}}=\int_{\mathcal{M}} d^4x\left[ \sqrt{-g}\frac{1}{16\pi}\left[R\phi-\omega \frac{\phi_{,\rho}\phi^{,\rho}}{\phi}-V(\phi)\right]+\sqrt{-g}\mathcal{L}_m\right].
     \label{eqn:BD_action_JF}
 \end{equation}
 
@@ -217,31 +217,57 @@ It can be shown that the JBD theory is a special case of BW theory, by
 
 Under the variational principle, the variation w.r.t the metric, will be the same as in \cref{eqn:appendix_delta_metric} with an extra term:
 \begin{equation}
-    \delta_g \int_{\mathcal{M}}d^4x\sqrt{-g}\frac{1}{2k'}\Lambda(\phi) = \frac{1}{2k'}\int_{\mathcal{M}}d^4x\sqrt{-g}\left(\frac{1}{2}\Lambda(\phi)g_{\mu\nu}\right),
+    \delta_g \int_{\mathcal{M}}d^4x\sqrt{-g}\frac{1}{16\pi}\Lambda(\phi) = \frac{1}{16\pi}\int_{\mathcal{M}}d^4x\sqrt{-g}\left(\frac{1}{2}\Lambda(\phi)g_{\mu\nu}\right),
 \end{equation}
 this will yield the following field equation:
 \begin{align}
-G_{\mu\nu}=k'\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{k'\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{k'\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)-\frac{\Lambda(\phi)g_{\mu\nu}}{2k'\phi}\right\}.
+G_{\mu\nu}=8\pi\left\{\frac{T_{\mu\nu}^{(m)}}{\phi}+\frac{\omega}{8\pi\phi^2}\left[\partial_\mu \phi \partial_\nu \phi-\frac{1}{2}g_{\mu\nu}\phi_{,\lambda}\phi^{,\lambda}\right]+\frac{1}{8\pi\phi}\left(\nabla_\mu\nabla_\nu\phi-g_{\mu\nu}\Box\phi\right)-\frac{\Lambda(\phi)g_{\mu\nu}}{16\pi\phi}\right\}.
 \label{eqn:field_eq_metric_bw}
 \end{align}
 
 The variation w.r.t the scalar field, will be
 \begin{equation}
-    \delta_\phi S_{\mathrm{BW}}=\frac{1}{2k'}\int_{\mathcal{M}} d^4x\sqrt{-g}\left\{ R-\left(\frac{\omega}{\phi}+\frac{d\omega(\phi)}{d\phi}\right)\frac{\phi_{,\mu}\phi^{,\mu}}{\phi}+2\omega\frac{\Box\phi}{\phi}-\frac{d\Lambda(\phi)}{d\phi}\right\}\delta\phi
+    \delta_\phi S_{\mathrm{BW}}=\frac{1}{16\pi}\int_{\mathcal{M}} d^4x\sqrt{-g}\left\{ R-\left(\frac{\omega}{\phi}+\frac{d\omega}{d\phi}\right)\frac{\phi_{,\mu}\phi^{,\mu}}{\phi}+2\omega\frac{\Box\phi}{\phi}-\frac{d\Lambda(\phi)}{d\phi}\right\}\delta\phi
     \label{eqn:delta_phi_bw}
 \end{equation}
 which with $\delta_\phi S_{\mathrm{BW}}=0$ and the trace of \cref{eqn:field_eq_metric_bw}:
 \begin{align}
-    2\omega\Box\phi&=-\phi R+\left(\frac{\omega}{\phi}+\frac{d\omega(\phi)}{d\phi}\right)\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}\Leftrightarrow\nonumber\\
-    \Leftrightarrow 2\omega\Box\phi&=\phi\left[\frac{k'T^{(m)}}{\phi}-\omega\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}-3\frac{\Box\phi}{\phi}\right]+\left(\frac{\omega}{\phi}+\frac{d\omega(\phi)}{d\phi}\right)\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}\Leftrightarrow\nonumber\\
-    \Leftrightarrow (2\omega+3)\Box\phi &=k' T^{(m)}+\frac{d\omega(\phi)}{d\phi}\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}
+    2\omega\Box\phi&=-\phi R+\left(\frac{\omega}{\phi}+\frac{d\omega}{d\phi}\right)\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}\Leftrightarrow\nonumber\\
+    \Leftrightarrow 2\omega\Box\phi&=\phi\left[\frac{8\pi T^{(m)}}{\phi}-\omega\frac{\phi_{,\mu}\phi^{,\mu}}{\phi^2}-3\frac{\Box\phi}{\phi}-2\frac{\Lambda(\phi)}{\phi}\right]+\left(\frac{\omega}{\phi}+\frac{d\omega}{d\phi}\right)\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}\Leftrightarrow\nonumber\\
+    \Leftrightarrow (2\omega+3)\Box\phi &=8\pi T^{(m)}+\frac{d\omega}{d\phi}\phi_{,\mu}\phi^{,\mu}+\phi\frac{d\Lambda(\phi)}{d\phi}-2\Lambda(\phi)
 \end{align}
+
+
 
 
 \subsection{Einstien frame}
 
+In the BW theory, the Einstein frame is attained under the choice of transformation $\Omega=(G\phi)^{1/2}$, and its action reads as
 \begin{equation}
-    S_{\text{EF}}=\int_{\mathcal{M}}d^4x \sqrt{-\tilde{g}}\left[\frac{\tilde{R}}{2k}-\frac{1}{2k}\left(\frac{3}{2}+\omega\right)\tilde{g}^{\mu\nu}\phi_{,\mu}\phi_{,\nu}-\frac{1}{2k}\frac{\Lambda(\phi)}{G\phi^2}+\alpha(\phi)\mathcal{L}_m(\tilde{g}^{\mu\nu},\Psi)\right]
+    S_{\text{EF}}=\int_{\mathcal{M}}d^4x \sqrt{-\tilde{g}}\left[\frac{\tilde{R}}{2\kappa^2}-\frac{1}{2}\tilde{g}^{\mu\nu}\varphi_{,\mu}\varphi_{,\nu}-\frac{1}{2\kappa^2}\frac{\Lambda(\phi)}{G\phi^2}+\alpha(\varphi)\mathcal{L}_m(\tilde{g}^{\mu\nu},\Psi)\right],
 \end{equation}
+where the new scalar field, the new potential and the coupling function, are respectively:
+\begin{equation}
+    \varphi=\sqrt{\left(2\omega+3\right)/2\kappa^2}\ln\phi,\quad U(\varphi)=\frac{\Lambda(\phi)}{G\phi^2},\quad \alpha(\varphi)=G^{-2}\exp\left(-2\varphi\sqrt{2\kappa^2/\left(2\omega+3\right)}\right).
+\end{equation}
+
+Using the variational principle w.r.t the metric:
+\begin{equation}
+    \delta_{\Tilde{g}} S = \int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}} \delta \Tilde{g}^{\mu\nu}\left\{\frac{\Tilde{G}_{\mu\nu}}{2\kappa^2}-\frac{1}{2}\left(\Tilde{\nabla}_\mu\varphi\Tilde{\nabla}_\nu\varphi-\frac{1}{2}\tilde{g}_{\mu\nu}\Tilde{\nabla}_\lambda\varphi\Tilde{\nabla}^\lambda\varphi\right)+\frac{\tilde{g}_{\mu\nu}}{4\kappa^2}U(\varphi)-\frac{1}{2}\alpha(\varphi)\Tilde{T}_{\mu\nu}^{(m)}\right\},
+\end{equation}
+and w.r.t the scalar field:
+\begin{align}
+    \delta_\varphi S&=  \int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\left(\delta\varphi \Tilde{\Box}\varphi-\frac{1}{2\kappa^2}\delta_\varphi U(\varphi)\right) +\delta_\varphi S_m(g^{\mu\nu})\\
+    &=\int_{\mathcal{M}} d^4x\sqrt{-\Tilde{g}}\delta\varphi\left(\tilde{\Box}\varphi-\frac{1}{2\kappa^2}U'(\varphi)-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\tilde{T}^{(m)}\right).
+\end{align}
+
+Then making $\delta_{\tilde{g}}S=0$ and $\delta_\varphi S=0$ we obtain the field equations:
+\begin{align}
+    &\Tilde{G}_{\mu\nu}=\kappa^2\left\{\alpha(\varphi)\tilde{T}_{\mu\nu}^{(m)}+\left(\Tilde{\nabla}_\mu\varphi\Tilde{\nabla}_\nu\varphi-\frac{1}{2}\tilde{g}_{\mu\nu}\Tilde{\nabla}_\lambda\varphi\Tilde{\nabla}^\lambda\varphi\right)-\frac{1}{2\kappa^2}\tilde{g}_{\mu\nu}U(\varphi) \right\},\\
+    &\tilde{\Box}\varphi=\frac{1}{2\kappa^2}U'(\varphi)+\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\tilde{T}^{(m)}.\label{eqn:scalar_field_field_bw_ef}
+\end{align}
+
+
+
 
 

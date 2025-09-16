@@ -8,7 +8,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Bibliography.bib
-Warning--I didn't find a database entry for ""
 -- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -16,47 +15,48 @@ Warning--I didn't find a database entry for ""
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--missing school in Lichnerowicz_1939
 
 Done.
-You've used 10 entries,
+You've used 16 entries,
             4855 wiz_defined-function locations,
-            1027 strings with 10094 characters,
-and the built_in function-call counts, 8597 in all, are:
-= -- 872
-> -- 166
-< -- 51
-+ -- 85
-- -- 38
-* -- 468
-:= -- 1414
-add.period$ -- 20
-call.type$ -- 10
-change.case$ -- 19
-chr.to.int$ -- 79
-cite$ -- 10
-duplicate$ -- 607
-empty$ -- 568
-format.name$ -- 57
-if$ -- 1930
+            1077 strings with 11221 characters,
+and the built_in function-call counts, 13520 in all, are:
+= -- 1354
+> -- 232
+< -- 97
++ -- 130
+- -- 48
+* -- 712
+:= -- 2217
+add.period$ -- 32
+call.type$ -- 16
+change.case$ -- 30
+chr.to.int$ -- 178
+cite$ -- 17
+duplicate$ -- 929
+empty$ -- 927
+format.name$ -- 73
+if$ -- 3046
 int.to.chr$ -- 1
-int.to.str$ -- 11
-missing$ -- 83
-newline$ -- 72
-num.names$ -- 30
-pop$ -- 170
+int.to.str$ -- 17
+missing$ -- 124
+newline$ -- 100
+num.names$ -- 48
+pop$ -- 253
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 16
 quote$ -- 2
-skip$ -- 698
+skip$ -- 1094
 stack$ -- 0
-substring$ -- 266
-swap$ -- 476
-text.length$ -- 21
+substring$ -- 504
+swap$ -- 731
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 151
-warning$ -- 0
-while$ -- 35
+type$ -- 239
+warning$ -- 1
+while$ -- 62
 width$ -- 0
-write$ -- 170
+write$ -- 253
 (There was 1 warning)

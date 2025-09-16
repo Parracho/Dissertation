@@ -205,36 +205,57 @@ From the conservation law of the matter EM tensor in the conformal frame, in \cr
 \end{align}
 where we use the \cref{eqn:energy_conserv_law_fluid}. By multiplying by $\times \tilde{N}^3/\Gamma$, averaging and using the commutation rule:
 \begin{align}
-    &\frac{D}{Dt}\left\langle \tilde{N}^2\tilde{\rho}_m\right\rangle_{\tilde{\Sigma}}+3\frac{1}{\tilde{a}}\frac{D\tilde{a}}{Dt}\langle \tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\rangle_{\tilde{\Sigma}}=-\left\langle\delta\hat{\Theta}\delta(\tilde{N}^2\tilde{P}_m)\right\rangle_{\tilde{\Sigma}}+2\left\langle \tilde{N}^2\rho_m \frac{D}{Dt}\ln\tilde{N}\right\rangle_{\tilde{\Sigma}}\nonumber\\
+    &\frac{D}{Dt}\left\langle \tilde{N}^2\tilde{\rho}_m\right\rangle_{\tilde{\Sigma}}+3\frac{1}{\tilde{a}}\frac{D\tilde{a}}{Dt}\langle \tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\rangle_{\tilde{\Sigma}}=-\left\langle\delta\hat{\Theta}\delta(\tilde{N}^2\tilde{P}_m)\right\rangle_{\tilde{\Sigma}}+2\left\langle \tilde{N}^2\tilde{\rho}_m \frac{D}{Dt}\ln\tilde{N}\right\rangle_{\tilde{\Sigma}}\nonumber\\
     &-\left\langle \frac{\tilde{N}^3}{\Gamma}\left(2\tilde{A}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha+\tilde{D}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha+\tilde{\pi}_{\alpha\beta}\tilde{\sigma}^{\alpha\beta}\right)\right\rangle_{\tilde{\Sigma}}-\left\langle\tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\frac{D}{Dt}\ln\Gamma\right\rangle_{\tilde{\Sigma}}\nonumber\\
     &+\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle \tilde{N}^2(-\tilde{\rho}_m+3\tilde{P}_m)\frac{D\varphi}{Dt}\right\rangle_{\tilde{\Sigma}},
+    \label{eqn:energy_conservation_general_ef}
 \end{align}
 where we use $\hat{\Theta}=\langle\hat{\Theta}\rangle+\delta\hat{\Theta}$ and a fluctuation also around the pressure.
 
 Decomposing the scalar field equation of motion:
 \begin{align}
     \Tilde{\Box}\varphi&=\tilde{g}^{\mu\nu}\tilde{\nabla}_\mu\tilde{\nabla}_\nu\varphi\equiv -\frac{\Gamma}{\tilde{N}}\frac{D}{Dt}\left(\frac{\Gamma}{\tilde{N}}\frac{D\varphi}{Dt}\right)+\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi +\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu\varphi-\frac{\Gamma}{\tilde{N}}\tilde{\Theta}\frac{D\varphi}{Dt}\\
-    &=\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}(-\rho_m+3P_m),
+    &=\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}(-\tilde{\rho}_m+3\tilde{P}_m),
 \end{align}
 by multiplying by $\times (\tilde{N}/\Gamma)^2$ we get
 \begin{align}
     &\frac{D^2\varphi}{Dt^2}+\frac{D\varphi}{Dt}\frac{D}{Dt}\ln\left(\frac{\Gamma}{\tilde{N}}\right)-\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi -\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu\varphi+\frac{\tilde{N}}{\Gamma}\tilde{\Theta}\frac{D\varphi}{Dt}\\
-    &=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\rho_m+3P_m),
+    &=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\tilde{\rho}_m+3\tilde{P}_m),
 \end{align}
 now taking the average and applying the commutation rule twice:
 \begin{align}
     &\frac{D}{Dt}\left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right)+\langle\hat{\Theta}\rangle_{\tilde{\Sigma}} \left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right) +\left\langle\frac{D\varphi}{Dt}\frac{D}{Dt}\ln\left(\frac{\Gamma^2}{\tilde{N}}\right)\right\rangle_{\tilde{\Sigma}}\\
-    &-\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi\right\rangle_{\tilde{\Sigma}} -\left\langle \left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu \varphi \right\rangle_{\tilde{\Sigma}}=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\rho_m+3P_m)\right\rangle_{\tilde{\Sigma}},\nonumber
+    &-\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi\right\rangle_{\tilde{\Sigma}} -\left\langle \left(\frac{\tilde{N}}{\Gamma}\right)^2\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu \varphi \right\rangle_{\tilde{\Sigma}}=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\tilde{\rho}_m+3\tilde{P}_m)\right\rangle_{\tilde{\Sigma}},\nonumber
+    \label{eqn:scalar_field_motion_general_ef}
 \end{align}
 where $\delta\varphi$ is the fluctuation around the spatially averaged scalar field.
 
-
+Assuming the conformal observer is geodesic $\tilde{N}=1$, and the obsever is comoving with the fluids $\Gamma=1$:
+\begin{align}
+    &\left(\frac{D}{Dt}+\langle\hat{\Theta}\rangle_{\tilde{\Sigma}}\right)\left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right)=-\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle(-\tilde{\rho}_m+3\tilde{P}_m)\right\rangle_{\tilde{\Sigma}}\\
+    &\frac{D}{Dt}\left\langle \tilde{\rho}_m\right\rangle_{\tilde{\Sigma}}+3\frac{1}{\tilde{a}}\frac{D\tilde{a}}{Dt}\langle \tilde{\rho}_m+\tilde{P}_m\rangle_{\tilde{\Sigma}}=-\left\langle\delta\hat{\Theta}\delta\tilde{P}_m\right\rangle_{\tilde{\Sigma}}-\left\langle\tilde{\pi}_{\alpha\beta}\tilde{\sigma}^{\alpha\beta}\right\rangle_{\tilde{\Sigma}}+\nonumber\\
+    &\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad+\frac{1}{2}\sqrt{\frac{2\kappa^2}{2\omega+3}}\left\langle (-\tilde{\rho}_m+3\tilde{P}_m)\frac{D\varphi}{Dt}\right\rangle_{\tilde{\Sigma}},
+\end{align}
 
 
 
 \section{Bergmann-Wagoner theory}
 
+The Friedmann equations 
 
+The general averaged matter conservation law in the Einstein frame, from \cref{eqn:energy_conservation_general_ef} with a field dependent coupling $\omega(\phi)$, will be
+\begin{align}
+    &\frac{D}{Dt}\left\langle \tilde{N}^2\tilde{\rho}_m\right\rangle_{\tilde{\Sigma}}+3\frac{1}{\tilde{a}}\frac{D\tilde{a}}{Dt}\langle \tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\rangle_{\tilde{\Sigma}}=-\left\langle\delta\hat{\Theta}\delta(\tilde{N}^2\tilde{P}_m)\right\rangle_{\tilde{\Sigma}}+2\left\langle \tilde{N}^2\tilde{\rho}_m \frac{D}{Dt}\ln\tilde{N}\right\rangle_{\tilde{\Sigma}}\nonumber\\
+    &-\left\langle \frac{\tilde{N}^3}{\Gamma}\left(2\tilde{A}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha+\tilde{D}^{(\mathbf{u})}_\alpha \tilde{q}^\alpha+\tilde{\pi}_{\alpha\beta}\tilde{\sigma}^{\alpha\beta}\right)\right\rangle_{\tilde{\Sigma}}-\left\langle\tilde{N}^2(\tilde{\rho}_m+\tilde{P}_m)\frac{D}{Dt}\ln\Gamma\right\rangle_{\tilde{\Sigma}}\nonumber\\
+    &+\frac{1}{2}\left\langle \sqrt{\frac{2\kappa^2}{2\omega+3}}\tilde{N}^2(-\tilde{\rho}_m+3\tilde{P}_m)\frac{D\varphi}{Dt}\right\rangle_{\tilde{\Sigma}},
+    \label{eqn:energy_conservation_general_bw_ef}
+\end{align}
+and the general averaged scalar field equation in the EF, from \cref{eqn:scalar_field_field_bw_ef} is
+\begin{align}
+    &\frac{D}{Dt}\left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right)+\langle\hat{\Theta}\rangle_{\tilde{\Sigma}} \left(\frac{D}{Dt}\langle\varphi\rangle_{\tilde{\Sigma}}-\langle\delta\hat{\Theta}\delta\varphi\rangle_{\tilde{\Sigma}}\right) +\left\langle\frac{D\varphi}{Dt}\frac{D}{Dt}\ln\left(\frac{\Gamma^2}{\tilde{N}}\right)\right\rangle_{\tilde{\Sigma}}\\
+    &-\left\langle\left(\frac{\tilde{N}}{\Gamma}\right)^2\left(\tilde{A}^\mu_{(\mathbf{\tilde{u}})} \tilde{\nabla}_\mu\varphi+\tilde{b}^{\mu\nu}\tilde{D}_\mu\tilde{D}_\nu \varphi\right) \right\rangle_{\tilde{\Sigma}}=-\frac{1}{2}\left\langle\left(\sqrt{\frac{2\kappa^2}{2\omega+3}}+\frac{1}{\kappa^2}U'(\varphi)\right)\left(\frac{\tilde{N}}{\Gamma}\right)^2(-\tilde{\rho}_m+3\tilde{P}_m)\right\rangle_{\tilde{\Sigma}},\nonumber
+    \label{eqn:scalar_field_motion_general_bw_ef}
+\end{align}
 
 
 

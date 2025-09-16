@@ -619,8 +619,6 @@ INPUT ./Chapters/LCA.tex
 INPUT ./Chapters/LCA.tex
 INPUT ./Chapters/LCA.tex
 INPUT Chapters/LCA.tex
-INPUT ./Figures/domain_transportation.png
-INPUT ./Figures/domain_transportation.png
 INPUT ./Chapters/Brans-Dicke.tex
 INPUT ./Chapters/Brans-Dicke.tex
 INPUT ./Chapters/Brans-Dicke.tex
@@ -640,6 +638,9 @@ INPUT main.brf
 INPUT ./main.brf
 INPUT ./main.brf
 OUTPUT main.brf
+INPUT ./Appendices/Formalism.tex
+INPUT ./Appendices/Formalism.tex
+INPUT Appendices/Formalism.tex
 INPUT ./Appendices/Variational.tex
 INPUT ./Appendices/Variational.tex
 INPUT ./Appendices/Variational.tex

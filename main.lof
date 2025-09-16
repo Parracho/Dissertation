@@ -4,6 +4,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme entailing the context of the geometrical quantities: $\mathbf {n}$ normal vector field to the hypersurface; $\mathbf {u}$ the 4-velocity vector field (fluid flow lines) with congruence $C(u)$; $\partial _t$ is the tangent vector to the constant coordinates lines ($x^i=const$) with congruence $C(\partial _t)$ (time-vector of the coordinate basis).}}{4}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Fluid congruence $C(u)$ relative to the Eulerian observer's congruence.}}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Fluid congruence $C(u)$ relative to the basis coordinates congruence.}}{6}{figure.caption.5}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
