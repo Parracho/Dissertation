@@ -54,4 +54,7 @@
 \contentsline {section}{\numberline {A.3}Codazzi Relation}{36}{section.A.3}%
 \contentsline {section}{\numberline {A.4}Ricci Relation}{37}{section.A.4}%
 \contentsline {chapter}{\numberline {B}Hamilton's principle}{38}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Derivation of the Commutation Rule}{42}{appendix.C}%
+\contentsline {section}{\numberline {C.1}According to the Normal Frame}{42}{section.C.1}%
+\contentsline {section}{\numberline {C.2}According to the Fluid Flow}{43}{section.C.2}%
 \contentsfinish 
